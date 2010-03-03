@@ -1,10 +1,37 @@
 // !$*UTF8*$!
 {
+	1D3623240D0F684500981E51 /* matemeterAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1150, 325}}";
+			sepNavSelRange = "{187, 124}";
+			sepNavVisRange = "{168, 165}";
+		};
+	};
+	1D3623250D0F684500981E51 /* matemeterAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {810, 622}}";
+			sepNavSelRange = "{256, 0}";
+			sepNavVisRange = "{0, 748}";
+		};
+	};
 	1D6058900D05DD3D006BFB54 /* matemeter */ = {
 		activeExec = 0;
 		executables = (
 			9749DAAA113DEA850056B12B /* matemeter */,
 		);
+	};
+	28D7ACF60DDB3853001CB0EB /* matemeterViewController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = matemeterViewController.h;
+		path = /Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterViewController.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {943, 221}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 229}";
+		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
@@ -21,9 +48,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					731,
+					765,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -38,11 +65,82 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					725,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
 			PBXPerProjectTemplateStateSaveDate = 289270405;
 			PBXWorkspaceStateSaveDate = 289270405;
 		};
+		perUserProjectItems = {
+			9749DAE3113E33A60056B12B /* PBXTextBookmark */ = 9749DAE3113E33A60056B12B /* PBXTextBookmark */;
+			9749DAE4113E33A60056B12B /* PBXTextBookmark */ = 9749DAE4113E33A60056B12B /* PBXTextBookmark */;
+			9749DAEB113E33A60056B12B /* PBXTextBookmark */ = 9749DAEB113E33A60056B12B /* PBXTextBookmark */;
+			9749DAEC113E33F20056B12B /* PBXTextBookmark */ = 9749DAEC113E33F20056B12B /* PBXTextBookmark */;
+			9749DAF9113E3BA20056B12B /* PBXTextBookmark */ = 9749DAF9113E3BA20056B12B /* PBXTextBookmark */;
+			9749DAFA113E3BA20056B12B /* PBXTextBookmark */ = 9749DAFA113E3BA20056B12B /* PBXTextBookmark */;
+			9749DAFB113E3BA20056B12B /* PBXTextBookmark */ = 9749DAFB113E3BA20056B12B /* PBXTextBookmark */;
+			9749DAFC113E3BA20056B12B /* PBXTextBookmark */ = 9749DAFC113E3BA20056B12B /* PBXTextBookmark */;
+			9749DAFD113E3BA20056B12B /* PBXTextBookmark */ = 9749DAFD113E3BA20056B12B /* PBXTextBookmark */;
+			9749DAFE113E3BA20056B12B /* PBXTextBookmark */ = 9749DAFE113E3BA20056B12B /* PBXTextBookmark */;
+			9749DB01113E3BA30056B12B /* PBXTextBookmark */ = 9749DB01113E3BA30056B12B /* PBXTextBookmark */;
+			9749DB04113E3C0C0056B12B /* PBXTextBookmark */ = 9749DB04113E3C0C0056B12B /* PBXTextBookmark */;
+			9749DB05113E3C0C0056B12B /* PBXTextBookmark */ = 9749DB05113E3C0C0056B12B /* PBXTextBookmark */;
+			9749DB08113E3C940056B12B /* PBXTextBookmark */ = 9749DB08113E3C940056B12B /* PBXTextBookmark */;
+			9749DB09113E3C940056B12B /* PBXTextBookmark */ = 9749DB09113E3C940056B12B /* PBXTextBookmark */;
+			9749DB0A113E3C940056B12B /* PBXTextBookmark */ = 9749DB0A113E3C940056B12B /* PBXTextBookmark */;
+			9749DB0B113E3C940056B12B /* PBXTextBookmark */ = 9749DB0B113E3C940056B12B /* PBXTextBookmark */;
+			9749DB0C113E3C950056B12B /* PBXTextBookmark */ = 9749DB0C113E3C950056B12B /* PBXTextBookmark */;
+			9749DB0F113E3CCE0056B12B /* PBXTextBookmark */ = 9749DB0F113E3CCE0056B12B /* PBXTextBookmark */;
+			9749DB10113E3CCE0056B12B /* PBXTextBookmark */ = 9749DB10113E3CCE0056B12B /* PBXTextBookmark */;
+			9749DB13113E3D4A0056B12B /* PBXTextBookmark */ = 9749DB13113E3D4A0056B12B /* PBXTextBookmark */;
+			9749DB14113E3D4A0056B12B /* PBXTextBookmark */ = 9749DB14113E3D4A0056B12B /* PBXTextBookmark */;
+			9749DB15113E3D4A0056B12B /* PBXTextBookmark */ = 9749DB15113E3D4A0056B12B /* PBXTextBookmark */;
+			9749DB16113E3D4A0056B12B /* PlistBookmark */ = 9749DB16113E3D4A0056B12B /* PlistBookmark */;
+			9749DB17113E3D4A0056B12B /* PlistBookmark */ = 9749DB17113E3D4A0056B12B /* PlistBookmark */;
+			9749DB18113E3D4A0056B12B /* PlistBookmark */ = 9749DB18113E3D4A0056B12B /* PlistBookmark */;
+			9749DB19113E3D710056B12B /* PBXTextBookmark */ = 9749DB19113E3D710056B12B /* PBXTextBookmark */;
+			9749DB1A113E3D710056B12B /* PlistBookmark */ = 9749DB1A113E3D710056B12B /* PlistBookmark */;
+			9749DB1B113E3D730056B12B /* PlistBookmark */ = 9749DB1B113E3D730056B12B /* PlistBookmark */;
+			9749DB1F113E3E610056B12B /* PlistBookmark */ = 9749DB1F113E3E610056B12B /* PlistBookmark */;
+			9749DB20113E3E610056B12B /* PlistBookmark */ = 9749DB20113E3E610056B12B /* PlistBookmark */;
+			9749DB21113E3E740056B12B /* PlistBookmark */ = 9749DB21113E3E740056B12B /* PlistBookmark */;
+			9749DB23113E3E860056B12B /* PlistBookmark */ = 9749DB23113E3E860056B12B /* PlistBookmark */;
+			9749DB26113E3F2B0056B12B /* PlistBookmark */ = 9749DB26113E3F2B0056B12B /* PlistBookmark */;
+			9749DB27113E3F2B0056B12B /* PlistBookmark */ = 9749DB27113E3F2B0056B12B /* PlistBookmark */;
+			9749DB2A113E40730056B12B /* PlistBookmark */ = 9749DB2A113E40730056B12B /* PlistBookmark */;
+			9749DB33113E42730056B12B /* PlistBookmark */ = 9749DB33113E42730056B12B /* PlistBookmark */;
+			9749DB34113E42730056B12B /* PBXTextBookmark */ = 9749DB34113E42730056B12B /* PBXTextBookmark */;
+			9749DB35113E42730056B12B /* PBXTextBookmark */ = 9749DB35113E42730056B12B /* PBXTextBookmark */;
+			9749DB36113E42730056B12B /* PBXTextBookmark */ = 9749DB36113E42730056B12B /* PBXTextBookmark */;
+		};
 		sourceControlManager = 9749DABD113DEA9C0056B12B /* Source Control */;
 		userBuildSettings = {
+		};
+	};
+	32CA4F630368D1EE00C91783 /* matemeter_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {943, 296}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 187}";
 		};
 	};
 	9749DAAA113DEA850056B12B /* matemeter */ = {
@@ -86,5 +184,432 @@
 	9749DABE113DEA9C0056B12B /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	9749DAE3113E33A60056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* matemeterAppDelegate.m */;
+		name = "matemeterAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 47;
+		vrLoc = 0;
+	};
+	9749DAE4113E33A60056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* matemeterAppDelegate.m */;
+		name = "matemeterAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 560;
+		vrLoc = 0;
+	};
+	9749DAEB113E33A60056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* matemeterAppDelegate.m */;
+		name = "matemeterAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 526;
+		vrLoc = 0;
+	};
+	9749DAEC113E33F20056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* matemeterAppDelegate.m */;
+		name = "matemeterAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 141;
+		vrLoc = 0;
+	};
+	9749DAF0113E356A0056B12B /* MateListVC.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1150, 221}}";
+			sepNavSelRange = "{37, 0}";
+			sepNavVisRange = "{0, 132}";
+		};
+	};
+	9749DAF1113E356A0056B12B /* MateListVC.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {943, 429}}";
+			sepNavSelRange = "{552, 0}";
+			sepNavVisRange = "{227, 328}";
+		};
+	};
+	9749DAF9113E3BA20056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* matemeterViewController.h */;
+		name = "matemeterViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 236;
+		vrLoc = 0;
+	};
+	9749DAFA113E3BA20056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* matemeterAppDelegate.m */;
+		name = "matemeterAppDelegate.m: 26";
+		rLen = 0;
+		rLoc = 580;
+		rType = 0;
+		vrLen = 473;
+		vrLoc = 211;
+	};
+	9749DAFB113E3BA20056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* matemeterAppDelegate.h */;
+		name = "matemeterAppDelegate.h: 18";
+		rLen = 0;
+		rLoc = 310;
+		rType = 0;
+		vrLen = 310;
+		vrLoc = 0;
+	};
+	9749DAFC113E3BA20056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9749DAF1113E356A0056B12B /* MateListVC.m */;
+		name = "MateListVC.m: 29";
+		rLen = 0;
+		rLoc = 552;
+		rType = 0;
+		vrLen = 328;
+		vrLoc = 227;
+	};
+	9749DAFD113E3BA20056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9749DAF0113E356A0056B12B /* MateListVC.h */;
+		name = "MateListVC.h: 4";
+		rLen = 0;
+		rLoc = 37;
+		rType = 0;
+		vrLen = 211;
+		vrLoc = 0;
+	};
+	9749DAFE113E3BA20056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9749DAF0113E356A0056B12B /* MateListVC.h */;
+		name = "MateListVC.h: 4";
+		rLen = 0;
+		rLoc = 37;
+		rType = 0;
+		vrLen = 211;
+		vrLoc = 0;
+	};
+	9749DB01113E3BA30056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9749DAF0113E356A0056B12B /* MateListVC.h */;
+		name = "MateListVC.h: 4";
+		rLen = 0;
+		rLoc = 37;
+		rType = 0;
+		vrLen = 208;
+		vrLoc = 0;
+	};
+	9749DB04113E3C0C0056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* matemeterAppDelegate.m */;
+		name = "matemeterAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 141;
+		vrLoc = 0;
+	};
+	9749DB05113E3C0C0056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9749DAF0113E356A0056B12B /* MateListVC.h */;
+		name = "MateListVC.h: 4";
+		rLen = 0;
+		rLoc = 37;
+		rType = 0;
+		vrLen = 132;
+		vrLoc = 0;
+	};
+	9749DB08113E3C940056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9749DAF0113E356A0056B12B /* MateListVC.h */;
+		name = "MateListVC.h: 4";
+		rLen = 0;
+		rLoc = 37;
+		rType = 0;
+		vrLen = 208;
+		vrLoc = 0;
+	};
+	9749DB09113E3C940056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* matemeterAppDelegate.m */;
+		name = "matemeterAppDelegate.m: 32";
+		rLen = 0;
+		rLoc = 665;
+		rType = 0;
+		vrLen = 353;
+		vrLoc = 375;
+	};
+	9749DB0A113E3C940056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* matemeterAppDelegate.h */;
+		name = "matemeterAppDelegate.h: 18";
+		rLen = 0;
+		rLoc = 310;
+		rType = 0;
+		vrLen = 412;
+		vrLoc = 0;
+	};
+	9749DB0B113E3C940056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* matemeterAppDelegate.h */;
+		name = "matemeterAppDelegate.h: 13";
+		rLen = 124;
+		rLoc = 187;
+		rType = 0;
+		vrLen = 370;
+		vrLoc = 30;
+	};
+	9749DB0C113E3C950056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* matemeterAppDelegate.h */;
+		name = "matemeterAppDelegate.h: 13";
+		rLen = 124;
+		rLoc = 187;
+		rType = 0;
+		vrLen = 370;
+		vrLoc = 30;
+	};
+	9749DB0F113E3CCE0056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9749DAF0113E356A0056B12B /* MateListVC.h */;
+		name = "MateListVC.h: 4";
+		rLen = 0;
+		rLoc = 37;
+		rType = 0;
+		vrLen = 132;
+		vrLoc = 0;
+	};
+	9749DB10113E3CCE0056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* matemeterAppDelegate.h */;
+		name = "matemeterAppDelegate.h: 13";
+		rLen = 124;
+		rLoc = 187;
+		rType = 0;
+		vrLen = 165;
+		vrLoc = 168;
+	};
+	9749DB13113E3D4A0056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* matemeterAppDelegate.h */;
+		name = "matemeterAppDelegate.h: 8";
+		rLen = 0;
+		rLoc = 141;
+		rType = 0;
+		vrLen = 399;
+		vrLoc = 0;
+	};
+	9749DB14113E3D4A0056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* matemeterAppDelegate.m */;
+		name = "matemeterAppDelegate.m: 32";
+		rLen = 0;
+		rLoc = 665;
+		rType = 0;
+		vrLen = 469;
+		vrLoc = 259;
+	};
+	9749DB15113E3D4A0056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* matemeter_Prefix.pch */;
+		name = "matemeter_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 187;
+		vrLoc = 0;
+	};
+	9749DB16113E3D4A0056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB17113E3D4A0056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB18113E3D4A0056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB19113E3D710056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* matemeterAppDelegate.h */;
+		name = "matemeterAppDelegate.h: 13";
+		rLen = 124;
+		rLoc = 187;
+		rType = 0;
+		vrLen = 165;
+		vrLoc = 168;
+	};
+	9749DB1A113E3D710056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB1B113E3D730056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB1F113E3E610056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB20113E3E610056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB21113E3E740056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB23113E3E860056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB26113E3F2B0056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB27113E3F2B0056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB2A113E40730056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB33113E42730056B12B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* matemeter-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/buf/Code/iphonematemeter/matemeter/matemeter-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9749DB34113E42730056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* matemeterAppDelegate.m */;
+		name = "matemeterAppDelegate.m: 32";
+		rLen = 0;
+		rLoc = 665;
+		rType = 0;
+		vrLen = 728;
+		vrLoc = 0;
+	};
+	9749DB35113E42730056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* matemeterAppDelegate.m */;
+		name = "matemeterAppDelegate.m: 14";
+		rLen = 0;
+		rLoc = 256;
+		rType = 0;
+		vrLen = 748;
+		vrLoc = 0;
+	};
+	9749DB36113E42730056B12B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* matemeterAppDelegate.m */;
+		name = "matemeterAppDelegate.m: 14";
+		rLen = 0;
+		rLoc = 256;
+		rType = 0;
+		vrLen = 748;
+		vrLoc = 0;
 	};
 }

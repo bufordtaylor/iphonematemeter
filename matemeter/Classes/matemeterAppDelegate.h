@@ -8,15 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@class matemeterViewController;
+
+@class MateListVC;
 
 @interface matemeterAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    matemeterViewController *viewController;
+	
+	UINavigationController* nav;
+	MateListVC* matesVC;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet matemeterViewController *viewController;
 
 @end
 

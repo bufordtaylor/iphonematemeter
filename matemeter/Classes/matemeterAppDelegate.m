@@ -7,18 +7,21 @@
 //
 
 #import "matemeterAppDelegate.h"
-#import "matemeterViewController.h"
+#import "MateListVC.h"
 
 @implementation matemeterAppDelegate
 
 @synthesize window;
-@synthesize viewController;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
+
+	matesVC = [[MateListVC alloc] init];
+	nav = [[UINavigationController alloc] initWithRootViewController:matesVC];
+	
+	
     // Override point for customization after app launch    
-    [window addSubview:viewController.view];
+    [window addSubview:nav.view];
     [window makeKeyAndVisible];
 	
 	return YES;
@@ -26,8 +29,9 @@
 
 
 - (void)dealloc {
-    [viewController release];
+    [nav release];
     [window release];
+	[matesVC release];
     [super dealloc];
 }
 
