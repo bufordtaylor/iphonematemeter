@@ -255,7 +255,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>97</real>
+								<real>172</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -267,6 +267,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
+								<string>9749DB39113E42DA0056B12B</string>
 								<string>9749DAED113E351D0056B12B</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
@@ -279,13 +280,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
-									<integer>10</integer>
+									<integer>2</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {97, 664}}</string>
+							<string>{{0, 0}, {172, 664}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -295,17 +296,17 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {114, 682}}</string>
+						<string>{{0, 0}, {189, 682}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>97</real>
+							<real>172</real>
 						</array>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>114pt</string>
+					<string>189pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -316,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>9749DAB1113DEA9C0056B12B</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>matemeterAppDelegate.m</string>
+								<string>Mate.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>9749DAB2113DEA9C0056B12B</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>matemeterAppDelegate.m</string>
+										<string>Mate.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9749DB36113E42730056B12B</string>
+										<string>9749DB45113E43310056B12B</string>
 										<key>history</key>
 										<array>
 											<string>9749DAFC113E3BA20056B12B</string>
@@ -336,7 +337,8 @@
 											<string>9749DB13113E3D4A0056B12B</string>
 											<string>9749DB15113E3D4A0056B12B</string>
 											<string>9749DB33113E42730056B12B</string>
-											<string>9749DB34113E42730056B12B</string>
+											<string>9749DB3F113E430E0056B12B</string>
+											<string>9749DB40113E430E0056B12B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -350,16 +352,16 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {470, 677}}</string>
+								<string>{{0, 0}, {395, 474}}</string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>677pt</string>
+							<string>474pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>0pt</string>
+							<string>203pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -373,7 +375,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1004, 82}}</string>
+										<string>{{10, 27}, {395, 176}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -427,7 +429,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {470, -27}}</string>
+										<string>{{10, 27}, {395, -27}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -436,7 +438,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>470pt</string>
+					<string>395pt</string>
 				</dict>
 			</array>
 			<key>Name</key>

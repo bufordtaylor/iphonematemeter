@@ -14,6 +14,7 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		9749DAF4113E3A970056B12B /* MateListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9749DAF1113E356A0056B12B /* MateListVC.m */; };
+		9749DB3C113E42FE0056B12B /* Mate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9749DB3B113E42FE0056B12B /* Mate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		8D1107310486CEB800E47090 /* matemeter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "matemeter-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		9749DAF0113E356A0056B12B /* MateListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MateListVC.h; sourceTree = "<group>"; };
 		9749DAF1113E356A0056B12B /* MateListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MateListVC.m; sourceTree = "<group>"; };
+		9749DB3A113E42FE0056B12B /* Mate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mate.h; path = Classes/Mate.h; sourceTree = "<group>"; };
+		9749DB3B113E42FE0056B12B /* Mate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mate.m; path = Classes/Mate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				9749DB39113E42DA0056B12B /* Models */,
 				9749DAED113E351D0056B12B /* matemeter */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -110,6 +114,15 @@
 				9749DAF1113E356A0056B12B /* MateListVC.m */,
 			);
 			name = matemeter;
+			sourceTree = "<group>";
+		};
+		9749DB39113E42DA0056B12B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9749DB3A113E42FE0056B12B /* Mate.h */,
+				9749DB3B113E42FE0056B12B /* Mate.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +181,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* matemeterAppDelegate.m in Sources */,
 				9749DAF4113E3A970056B12B /* MateListVC.m in Sources */,
+				9749DB3C113E42FE0056B12B /* Mate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
