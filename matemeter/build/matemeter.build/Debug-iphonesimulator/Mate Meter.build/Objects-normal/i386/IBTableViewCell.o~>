@@ -1,0 +1,12 @@
+/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m:13: error: no declaration of property 'cellView' found in the interface
+/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m: In function '-[IBTableViewCell initWithCellNib:reuseIdentifier:]':
+/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m:16: warning: 'NSObject' may not respond to '-initWithFrame:reuseIdentifier:'
+/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m:16: warning: (Messages without a matching method signature
+/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m:16: warning: will be assumed to return 'id' and accept
+/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m:16: warning: '...' as arguments.)
+/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m:23: error: request for member 'contentView' in something not a structure or union
+/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m:23: error: request for member 'cellView' in something not a structure or union
+/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m: In function '-[IBTableViewCell dealloc]':
+/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m:28: error: 'cellView' undeclared (first use in this function)
+/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m:28: error: (Each undeclared identifier is reported only once
+/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m:28: error: for each function it appears in.)

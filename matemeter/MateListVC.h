@@ -13,4 +13,6 @@
 
 }
 
+-(BOOL) isAddMateIndexPath:(NSIndexPath*)indexPath;
+
 @end
