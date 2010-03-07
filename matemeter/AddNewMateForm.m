@@ -13,6 +13,25 @@
 
 -(id) initWithReuseIdentifier:(NSString *)ri {
 	if (self = [super initWithCellNib:@"AddNewMateForm" reuseIdentifier:ri]){
+		nameInput.textAlignment = UITextAlignmentRight;
+		nameInput.keyboardType = UIKeyboardTypeAlphabet;
+		nameInput.keyboardAppearance = UIKeyboardAppearanceAlert;
+		
+		ageInput.keyboardType = UIKeyboardTypeNumberPad;
+		ageInput.keyboardAppearance = UIKeyboardAppearanceAlert;
+		
+		dateInput.datePickerMode = UIDatePickerModeDate;
+		dateInput.hidden = NO;
+		dateInput.date = [NSDate date];
+		
+		relationInput.minimumValue = 0.0;
+		relationInput.maximumValue = 3.0;
+		relationInput.tag = 1;
+		relationInput.value =  0.0;
+		relationInput.continuous = YES;
+		
+		relationLabel.textColor = [UIColor redColor];
+		
 	}
 	return self;
 }
@@ -21,11 +40,18 @@
 	[nameInput release];
 	[ageInput release];
 	[sexInput release];
-	[startMonthInput release];
-	[startYearInput release];
 	[relationInput release];
+	[dateInput release];
+	[relationLabel release];
 	[super dealloc];
-	
 }
+
+-(UITextField*) nameInput{	return nameInput; }
+-(UITextField*) ageInput{	return ageInput; }
+-(UISegmentedControl*) sexInput{	return sexInput; }
+-(UISlider*) relationInput{	return relationInput; }
+-(UIDatePicker*) dateInput{	return dateInput; }
+-(UILabel*) relationLabel{	return relationLabel; }
+
 
 @end

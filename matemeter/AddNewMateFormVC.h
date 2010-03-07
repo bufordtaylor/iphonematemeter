@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AddNewMateForm.h";
 
-
-@interface AddNewMateFormVC : UITableViewController {
+@interface AddNewMateFormVC : UITableViewController <UITextFieldDelegate, UIPickerViewDelegate>  {
+	AddNewMateForm* mateForm;
 
 }
+
+-(void)setViewMovedUp:(BOOL)movedUp;
 
 @end
