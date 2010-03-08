@@ -1,3 +1,0 @@
-/Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m: In function '-[AddNewMateFormVC tableView:cellForRowAtIndexPath:]':
-/Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m:46: warning: class 'AddNewMateFormVC' does not implement the 'UITextFieldDelegate' protocol
-/Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m:47: warning: class 'AddNewMateFormVC' does not implement the 'UITextFieldDelegate' protocol

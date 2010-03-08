@@ -11,7 +11,7 @@
 
 @interface AddNewMateFormVC : UITableViewController <UITextFieldDelegate, UIPickerViewDelegate>  {
 	AddNewMateForm* mateForm;
-
+	UIBarButtonItem* saveBtn;
 }
 
 -(void)setViewMovedUp:(BOOL)movedUp;

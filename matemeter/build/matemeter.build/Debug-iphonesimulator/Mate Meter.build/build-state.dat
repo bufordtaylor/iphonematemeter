@@ -1,7 +1,7 @@
 TMate Meter
 v7
 r0
-t289645087.413900
+t289718212.252973
 cCheck dependencies
 cProcessInfoPlistFile "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Info.plist" matemeter-Info.plist
 cCompileXIB /Users/buf/Code/iphonematemeter/matemeter/MainWindow.xib
@@ -16,6 +16,8 @@ cCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-
 cCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/IBTableViewCell.o" /Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateForm.o" /Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateFormVC.o" /Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/Services.o" /Users/buf/Code/iphonematemeter/matemeter/Services.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/DataManager.o" /Users/buf/Code/iphonematemeter/matemeter/DataManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter" normal i386
 cGenerateDSYMFile "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app.dSYM" "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter"
 cTouch "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app"
@@ -76,9 +78,9 @@ i<Foundation/Foundation.h>
 i"IBTableViewCell.h"
 
 N/Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.m
-c000000004B9366D90000000000000594
-t1267951321
-s1428
+c000000004B93E8230000000000000598
+t1267984419
+s1432
 i"AddNewMateForm.h"
 
 N/Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.xib
@@ -87,18 +89,21 @@ t1267951211
 s34273
 
 N/Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.h
-c000000004B935367000000000000017A
-t1267946343
-s378
+c000000004B93FE190000000000000194
+t1267990041
+s404
 i<Foundation/Foundation.h>
 i"AddNewMateForm.h"
 
 N/Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m
-c000000004B936A960000000000001298
-t1267952278
-s4760
+c000000004B94879F0000000000001B70
+t1268025247
+s7024
 i"AddNewMateFormVC.h"
 i"AddNewMateForm.h"
+i"Mate.h"
+i"Services.h"
+i"DataManager.h"
 
 N/Users/buf/Code/iphonematemeter/matemeter/Classes/Mate.h
 c000000004B8FE4550000000000000211
@@ -113,17 +118,45 @@ s542
 i"Mate.h"
 
 N/Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterAppDelegate.h
-c000000004B8E050F0000000000000190
-t1267598607
-s400
+c000000004B94802900000000000001CC
+t1268023337
+s460
 i<UIKit/UIKit.h>
 
 N/Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterAppDelegate.m
-c000000004B8E0A5E00000000000002EC
-t1267599966
-s748
+c000000004B9482910000000000000352
+t1268023953
+s850
 i"matemeterAppDelegate.h"
 i"MateListVC.h"
+i"Services.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/DataManager.h
+c000000004B9488430000000000000135
+t1268025411
+s309
+i<Foundation/Foundation.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/DataManager.m
+c000000004B9486C6000000000000019C
+t1268025030
+s412
+i"DataManager.h"
+i"Mate.h"
+i"Services.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/DateManager.h
+c000000004B947BDF0000000000000127
+t1268022239
+s295
+i<Foundation/Foundation.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/DateManager.m
+c000000004B947C6C0000000000000187
+t1268022380
+s391
+i"DateManager.h"
+i"Mate.h"
 
 N/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.h
 c000000004B8F52290000000000000286
@@ -156,12 +189,26 @@ i"MateListVC.h"
 i"AddNewMateCell.h"
 i"AddNewMateFormVC.h"
 
+N/Users/buf/Code/iphonematemeter/matemeter/Services.h
+c000000004B947CD40000000000000127
+t1268022484
+s295
+i<Foundation/Foundation.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/Services.m
+c000000004B9486EA0000000000000225
+t1268025066
+s549
+i"Services.h"
+i"matemeterAppDelegate.h"
+i"DataManager.h"
+
 N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app
-t1267952282
+t1268025412
 s272
 
 N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app.dSYM
-t1267952282
+t1268025412
 s102
 
 N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/AddNewMate.nib
@@ -181,8 +228,8 @@ t1267678842
 s1331
 
 N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter
-t1267952282
-s35812
+t1268025412
+s42040
 
 N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/PkgInfo
 t1267678837
@@ -241,21 +288,29 @@ t1267684624
 s17312
 
 N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateForm.o
-t1267951564
+t1267984419
 s25500
 
 N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateFormVC.o
-t1267952282
-s48408
+t1268025411
+s56124
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/DataManager.o
+t1268025412
+s8704
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/DateManager.o
+t2
+s0
 
 N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/IBTableViewCell.o
 t1267684624
 s19356
 
 N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/Mate Meter.LinkFileList
-c000000004B8FE6B20000000000000451
-t1267721906
-s1105
+c000000004B9482730000000000000560
+t1268023923
+s1376
 
 N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/Mate Metere.LinkFileList
 c00000000000000000000000000000000
@@ -267,8 +322,12 @@ t1267721948
 s11420
 
 N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/MateListVC.o
-t1267951217
-s37784
+t1267990370
+s37804
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/Services.o
+t1268025411
+s36480
 
 N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/main.o
 t1267678842
@@ -280,8 +339,8 @@ t1267678726
 s542
 
 N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/matemeterAppDelegate.o
-t1267718665
-s39568
+t1268023954
+s40268
 
 N/Users/buf/Code/iphonematemeter/matemeter/main.m
 c000000004B8DB3050000000000000163
@@ -307,7 +366,7 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies289645087#289645087#0(0"0(0#1#0"4300907800#0"0#
+lSLF07#2@18"Check dependencies289718211#289718211#0(0"0(0#1#0"4300907800#0"0#
 
 CCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateCell.o" /Users/buf/Code/iphonematemeter/matemeter/AddNewMateCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s289377424.233156
@@ -323,8 +382,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@66"Compile /Users/buf/Code/iphonematemeter/matemeter/AddNewMateCell.m289377424#289377424#0(0"0(0#0#58"/Users/buf/Code/iphonematemeter/matemeter/AddNewMateCell.m4300907800#1977"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/AddNewMateCell.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateCell.o"0#
 
 CCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateForm.o" /Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s289644363.348636
-e289644364.670452
+s289677219.294057
+e289677219.482533
 r1
 xCompileC
 xbuild/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateForm.o
@@ -333,11 +392,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@66"Compile /Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.m289644363#289644364#0(0"0(0#0#58"/Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.m4300907800#1977"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateForm.o"0#
+lSLF07#2@66"Compile /Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.m289677219#289677219#0(0"0(0#0#58"/Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.m4300907800#1977"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateForm.o"0#
 
 CCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateFormVC.o" /Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s289645081.318848
-e289645082.255606
+s289718211.759563
+e289718211.962826
 r1
 xCompileC
 xbuild/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateFormVC.o
@@ -346,7 +405,23 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m289645081#289645082#0(0"0(0#0#60"/Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m4300907800#1981"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateFormVC.o"0#
+lSLF07#2@68"Compile /Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m289718211#289718211#0(0"0(0#0#60"/Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m4300907800#1981"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/AddNewMateFormVC.o"0#
+
+CCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/DataManager.o" /Users/buf/Code/iphonematemeter/matemeter/DataManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s289718211.948242
+e289718212.201059
+r1
+xCompileC
+xbuild/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/DataManager.o
+x/Users/buf/Code/iphonematemeter/matemeter/DataManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/buf/Code/iphonematemeter/matemeter/DataManager.m289718211#289718212#0(0"0(0#0#55"/Users/buf/Code/iphonematemeter/matemeter/DataManager.m4300907800#1971"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/DataManager.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/DataManager.o"0#
+
+CCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/DateManager.o" /Users/buf/Code/iphonematemeter/matemeter/DateManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/IBTableViewCell.o" /Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s289377424.347144
@@ -377,8 +452,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@64"Compile /Users/buf/Code/iphonematemeter/matemeter/Classes/Mate.m289414748#289414748#0(0"0(0#0#56"/Users/buf/Code/iphonematemeter/matemeter/Classes/Mate.m4300907800#1965"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/Classes/Mate.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/Mate.o"0#
 
 CCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/MateListVC.o" /Users/buf/Code/iphonematemeter/matemeter/MateListVC.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s289644016.824820
-e289644017.756838
+s289683170.519248
+e289683170.724866
 r1
 xCompileC
 xbuild/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/MateListVC.o
@@ -389,7 +464,20 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/buf/Code/iphonematemeter/matemeter/MateListVC.m: In function '-[MateListVC tableView:cellForRowAtIndexPath:]':
 o/Users/buf/Code/iphonematemeter/matemeter/MateListVC.m:59: warning: control reaches end of non-void function
-lSLF07#2@62"Compile /Users/buf/Code/iphonematemeter/matemeter/MateListVC.m289644016#289644017#0(227"/Users/buf/Code/iphonematemeter/matemeter/MateListVC.m: In function '-[MateListVC tableView:cellForRowAtIndexPath:]':/Users/buf/Code/iphonematemeter/matemeter/MateListVC.m:59: warning: control reaches end of non-void function1(22@40"Control reaches end of non-void function289644017#118#109#0(6@54"/Users/buf/Code/iphonematemeter/matemeter/MateListVC.m289416234#59#0#59#0#40"control reaches end of non-void function0(0#0#54"/Users/buf/Code/iphonematemeter/matemeter/MateListVC.m4300907800#1969"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/MateListVC.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/MateListVC.o"0#
+lSLF07#2@62"Compile /Users/buf/Code/iphonematemeter/matemeter/MateListVC.m289683170#289683170#0(227"/Users/buf/Code/iphonematemeter/matemeter/MateListVC.m: In function '-[MateListVC tableView:cellForRowAtIndexPath:]':/Users/buf/Code/iphonematemeter/matemeter/MateListVC.m:59: warning: control reaches end of non-void function1(22@40"Control reaches end of non-void function289683170#118#109#0(6@54"/Users/buf/Code/iphonematemeter/matemeter/MateListVC.m289416234#59#0#59#0#40"control reaches end of non-void function0(0#0#54"/Users/buf/Code/iphonematemeter/matemeter/MateListVC.m4300907800#1969"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/MateListVC.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/MateListVC.o"0#
+
+CCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/Services.o" /Users/buf/Code/iphonematemeter/matemeter/Services.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s289718211.760711
+e289718211.948115
+r1
+xCompileC
+xbuild/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/Services.o
+x/Users/buf/Code/iphonematemeter/matemeter/Services.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/buf/Code/iphonematemeter/matemeter/Services.m289718211#289718211#0(0"0(0#0#52"/Users/buf/Code/iphonematemeter/matemeter/Services.m4300907800#1965"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/Services.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/Services.o"0#
 
 CCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/main.o" /Users/buf/Code/iphonematemeter/matemeter/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s289371642.312767
@@ -405,8 +493,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@56"Compile /Users/buf/Code/iphonematemeter/matemeter/main.m289371642#289371642#0(0"0(0#0#48"/Users/buf/Code/iphonematemeter/matemeter/main.m4300907800#1957"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/main.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/main.o"0#
 
 CCompileC "build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/matemeterAppDelegate.o" /Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s289411465.403432
-e289411465.661304
+s289716754.062677
+e289716754.317135
 r1
 xCompileC
 xbuild/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/matemeterAppDelegate.o
@@ -415,7 +503,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterAppDelegate.m289411465#289411465#0(0"0(0#0#72"/Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterAppDelegate.m4300907800#1997"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterAppDelegate.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/matemeterAppDelegate.o"0#
+lSLF07#2@80"Compile /Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterAppDelegate.m289716754#289716754#0(0"0(0#0#72"/Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterAppDelegate.m4300907800#1997"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-generated-files.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-own-target-headers.hmap" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-all-target-headers.hmap" -iquote "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Mate Meter-project-headers.hmap" -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -I/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/include "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources/i386" "-I/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/DerivedSources" -include /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bhpgwvnwbyvkpqbeoidgkltpacxb/matemeter_Prefix.pch -c /Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterAppDelegate.m -o "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/matemeterAppDelegate.o"0#
 
 CCompileXIB /Users/buf/Code/iphonematemeter/matemeter/AddNewMate.xib
 s289415608.829813
@@ -442,13 +530,13 @@ x/Users/buf/Code/iphonematemeter/matemeter/MainWindow.xib
 lSLF07#2@25"CompileXIB MainWindow.xib289371637#289371642#0(0"0(0#0#56"/Users/buf/Code/iphonematemeter/matemeter/MainWindow.xib4300907800#496"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/MainWindow.nib" /Users/buf/Code/iphonematemeter/matemeter/MainWindow.xib0#
 
 CGenerateDSYMFile "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app.dSYM" "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter"
-s289645082.545525
-e289645082.664849
+s289718212.227305
+e289718212.249537
 r1
 xGenerateDSYMFile
 x/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app.dSYM
 x/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter
-lSLF07#2@122"GenerateDSYMFile "build/Debug-iphonesimulator/Mate Meter.app.dSYM" "build/Debug-iphonesimulator/Mate Meter.app/Mate Meter"289645082#289645082#0(0"0(0#0#95"/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter4300907800#405"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter" -o "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app.dSYM"0#
+lSLF07#2@122"GenerateDSYMFile "build/Debug-iphonesimulator/Mate Meter.app.dSYM" "build/Debug-iphonesimulator/Mate Meter.app/Mate Meter"289718212#289718212#0(0"0(0#0#95"/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter4300907800#405"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter" -o "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app.dSYM"0#
 
 CGenerateDSYMFile "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Metere.app.dSYM" "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Metere.app/Mate Metere"
 r0
@@ -463,14 +551,14 @@ x/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/matemeter
 lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/matemeter.app.dSYM build/Debug-iphonesimulator/matemeter.app/matemeter289371527#289371528#0(0"0(0#0#93"/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/matemeter.app/matemeter4300907800#398"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/matemeter.app/matemeter -o /Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/matemeter.app.dSYM0#
 
 CLd "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter" normal i386
-s289645082.255761
-e289645082.545416
+s289718212.201157
+e289718212.227192
 r1
 xLd
 x/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter
 xnormal
 xi386
-lSLF07#2@100"Link /Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter289645082#289645082#0(0"0(0#0#0"4300907800#897"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -filelist "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/Mate Meter.LinkFileList" -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter"0#
+lSLF07#2@100"Link /Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter289718212#289718212#0(0"0(0#0#0"4300907800#897"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -F/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator -filelist "/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphonesimulator/Mate Meter.build/Objects-normal/i386/Mate Meter.LinkFileList" -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app/Mate Meter"0#
 
 CLd "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Metere.app/Mate Metere" normal i386
 r0
@@ -504,12 +592,12 @@ CProcessPCH /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode
 r0
 
 CTouch "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app"
-s289645082.664994
-e289645082.684081
+s289718212.249643
+e289718212.252651
 r1
 xTouch
 x/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app
-lSLF07#2@90"Touch /Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app289645082#289645082#0(0"0(0#0#0"4300907800#289"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app"0#
+lSLF07#2@90"Touch /Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app289718212#289718212#0(0"0(0#0#0"4300907800#289"    cd /Users/buf/Code/iphonematemeter/matemeter    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Meter.app"0#
 
 CTouch "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphonesimulator/Mate Metere.app"
 r0

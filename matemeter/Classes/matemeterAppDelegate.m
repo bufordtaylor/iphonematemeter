@@ -8,6 +8,7 @@
 
 #import "matemeterAppDelegate.h"
 #import "MateListVC.h"
+#import "Services.h"
 
 @implementation matemeterAppDelegate
 
@@ -15,7 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-
+	services = [[Services alloc] init];
 	matesVC = [[MateListVC alloc] init];
 	nav = [[UINavigationController alloc] initWithRootViewController:matesVC];
 	
@@ -33,6 +34,10 @@
     [window release];
 	[matesVC release];
     [super dealloc];
+}
+
+-(Services*) services {
+	return services;
 }
 
 

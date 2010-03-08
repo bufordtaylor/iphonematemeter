@@ -8,8 +8,11 @@
 
 #import "AddNewMateFormVC.h"
 #import "AddNewMateForm.h"
+#import "Mate.h"
+#import "Services.h"
+#import "DataManager.h"
 
-#define kOFFSET_FOR_KEYBOARD 30.0
+#define kOFFSET_FOR_KEYBOARD 0.0
 
 @implementation AddNewMateFormVC
 
@@ -22,13 +25,54 @@
 		self.tableView.allowsSelection = false;
 		self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 		self.tableView.scrollEnabled = NO;
-		mateForm = nil;
+		saveBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(tapSave)];
+		saveBtn.title = @"Save";
 	}
 	return self;
 }
 
 -(void) dealloc {
 	[super dealloc];
+}
+
+-(void) tapSave {
+	NSString* sex = [mateForm.sexInput titleForSegmentAtIndex: [mateForm.sexInput selectedSegmentIndex]];
+	NSDateFormatter* dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+	[dateFormatter setDateStyle:NSDateFormatterLongStyle];
+	[dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+	NSString* date = [dateFormatter stringFromDate:[mateForm.dateInput date]];
+	
+	Mate* mate = [[[Mate alloc] init] autorelease];
+	mate.sex = sex;
+	mate.start_date = [mateForm.dateInput date];
+	mate.name = mateForm.nameInput.text;
+	mate.age = mateForm.ageInput.text;
+	mate.relation = mateForm.relationLabel.text;
+	
+	[[[Services services] dm].mates addObject:mate];
+	
+	
+	
+	
+	NSLog(@"name = %@, age = %@, relation = %@, sex = %@, date = %@", mateForm.nameInput.text, mateForm.ageInput.text, mateForm.relationLabel.text, sex, date);
+}
+
+-(void) tapDone {
+	if ([mateForm.nameInput isFirstResponder]) [mateForm.nameInput resignFirstResponder];
+	if ([mateForm.ageInput isFirstResponder]) [mateForm.ageInput resignFirstResponder];
+	self.navigationItem.rightBarButtonItem = nil;
+	NSString* name = mateForm.nameInput.text;
+	NSString* age = mateForm.ageInput.text;
+	if(name && age && ([[name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] > 0)  && ([[age stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] > 0)){
+		self.navigationItem.rightBarButtonItem = saveBtn;
+	}
+}
+
+
+-(void) showDoneButton {
+	UIBarButtonItem* doneBtn = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(tapDone)] autorelease];
+	doneBtn.title = @"Done Typing";
+	self.navigationItem.rightBarButtonItem = doneBtn;
 }
 
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
@@ -47,13 +91,18 @@
 		mateForm = [[[AddNewMateForm alloc] initWithReuseIdentifier:AddNewMateFormIden] autorelease];
 		mateForm.ageInput.delegate = self;
 		mateForm.nameInput.delegate = self;
-		
 		[mateForm.relationInput addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
 		[mateForm.dateInput addTarget:self action:@selector(dateAction:) forControlEvents:UIControlEventValueChanged];
-		
+		[mateForm.sexInput addTarget:self action:@selector(sexAction:) forControlEvents:UIControlEventValueChanged];
 	}
-	
 	return mateForm;
+}
+
+
+-(void) sexAction:(UISegmentedControl*)sender {
+	UISegmentedControl* segmentedControl = (UISegmentedControl*) sender;
+	NSLog(@"picked %@", [segmentedControl titleForSegmentAtIndex: [segmentedControl selectedSegmentIndex]]);
+	
 }
 
 -(void) dateAction:(UIDatePicker*)sender {
@@ -106,7 +155,7 @@
 -(void)setViewMovedUp:(BOOL)movedUp
 {
     [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.5]; // if you want to slide up the view
+    [UIView setAnimationDuration:1.0]; // if you want to slide up the view
 	
     CGRect rect = self.view.frame;
     if (movedUp)
@@ -139,6 +188,7 @@
     {
         [self setViewMovedUp:NO];
     }
+	[self showDoneButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated

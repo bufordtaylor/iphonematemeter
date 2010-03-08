@@ -10,15 +10,18 @@
 
 
 @class MateListVC;
+@class Services;
 
 @interface matemeterAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-	
 	UINavigationController* nav;
 	MateListVC* matesVC;
+	Services* services;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+
+-(Services*) services;
 
 @end
 

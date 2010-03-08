@@ -15,10 +15,10 @@
 	if (self = [super initWithCellNib:@"AddNewMateForm" reuseIdentifier:ri]){
 		nameInput.textAlignment = UITextAlignmentRight;
 		nameInput.keyboardType = UIKeyboardTypeAlphabet;
-		nameInput.keyboardAppearance = UIKeyboardAppearanceAlert;
+		nameInput.keyboardAppearance = UIKeyboardAppearanceDefault;
 		
 		ageInput.keyboardType = UIKeyboardTypeNumberPad;
-		ageInput.keyboardAppearance = UIKeyboardAppearanceAlert;
+		ageInput.keyboardAppearance = UIKeyboardAppearanceDefault;
 		
 		dateInput.datePickerMode = UIDatePickerModeDate;
 		dateInput.hidden = NO;
