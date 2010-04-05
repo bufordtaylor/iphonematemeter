@@ -24,4 +24,8 @@
 	
 }
 
+-(void) changeTextTo:(NSString*) text {
+	fieldLabel.text = text;
+}
+
 @end

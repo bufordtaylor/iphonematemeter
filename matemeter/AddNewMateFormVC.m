@@ -11,6 +11,8 @@
 #import "Mate.h"
 #import "Services.h"
 #import "DataManager.h"
+#import "MenuList.h"
+#import "Category.h"
 
 #define kOFFSET_FOR_KEYBOARD 0.0
 
@@ -49,12 +51,23 @@
 	mate.age = mateForm.ageInput.text;
 	mate.relation = mateForm.relationLabel.text;
 	
+	Category* category = [[[Category alloc] initWithMate:mate] autorelease];
+	
+	mate.category = category;
+	[mate updateDateModified];
+	NSString* modified = [dateFormatter stringFromDate:mate.dateModified];
+	
 	[[[Services services] dm].mates addObject:mate];
+	NSLog(@"%d mates right now", [[[Services services] dm].mates count]);
+	
+	[[Services services] dm].currentMate = mate;
+	
+	[self.navigationController pushViewController:[[[MenuList alloc] initWithMate:mate] autorelease] animated:YES];
 	
 	
 	
 	
-	NSLog(@"name = %@, age = %@, relation = %@, sex = %@, date = %@", mateForm.nameInput.text, mateForm.ageInput.text, mateForm.relationLabel.text, sex, date);
+	NSLog(@"name = %@, age = %@, relation = %@, sex = %@, date = %@, modified= %@", mateForm.nameInput.text, mateForm.ageInput.text, mateForm.relationLabel.text, sex, date, modified);
 }
 
 -(void) tapDone {

@@ -1,0 +1,656 @@
+TMate Meter
+v7
+r1
+cCheck dependencies
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk
+c000000004B47D28D0000000000000110
+t1262998157
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/ResourceRules.plist
+c000000004A0BA04000000000000001E5
+t1242275904
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004A121EB900000000003D72A0
+t1242701497
+s4027040
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004A121FF90000000000396540
+t1242701817
+s3761472
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004A0BAECB0000000000001355
+t1242279627
+s4949
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004A0CBEBD000000000000075E
+t1242349245
+s1886
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004A1221FD00000000019A6110
+t1242702333
+s26894608
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/lib/libsqlite3.0.dylib
+c000000004A121E7D00000000000A9280
+t1242701437
+s692864
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk
+c000000004B7F9C7F0000000000000110
+t1266654335
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+c000000004B7C99D000000000000001E5
+t1266457040
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004B7D0F6D00000000003B4B70
+t1266487149
+s3885936
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B7D0FBE000000000036A580
+t1266487230
+s3581312
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B7D0F9B0000000000001355
+t1266487195
+s4949
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B7E2A02000000000000098F
+t1266559490
+s2447
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B7E2AAA00000000026E4750
+t1266559658
+s40781648
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/usr/lib/libsqlite3.0.dylib
+c000000004B7D049600000000000B4CF0
+t1266484374
+s740592
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddDate.xib
+c000000004BA703750000000000003F25
+t1269236597
+s16165
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddNewExpenseForm.h
+c000000004BA6CC100000000000000192
+t1269222416
+s402
+i<Foundation/Foundation.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddNewExpenseForm.m
+c000000004BA6CCF20000000000000CFE
+t1269222642
+s3326
+i"AddNewExpenseForm.h"
+i"AddTextCell.h"
+i"Expense.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddNewMate.xib
+c000000004BA6B54F00000000000040D9
+t1269216591
+s16601
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddNewMateCell.h
+c000000004BA6B0B90000000000000175
+t1269215417
+s373
+i<Foundation/Foundation.h>
+i"IBTableViewCell.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddNewMateCell.m
+c000000004BA6B0AE000000000000021E
+t1269215406
+s542
+i"AddNewMateCell.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.h
+c000000004B9365FC00000000000002C1
+t1267951100
+s705
+i<Foundation/Foundation.h>
+i"IBTableViewCell.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.m
+c000000004B93E8230000000000000598
+t1267984419
+s1432
+i"AddNewMateForm.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.xib
+c000000004BA6736800000000000085E4
+t1269199720
+s34276
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.h
+c000000004B93FE190000000000000194
+t1267990041
+s404
+i<Foundation/Foundation.h>
+i"AddNewMateForm.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m
+c000000004BA6B9C30000000000001D5A
+t1269217731
+s7514
+i"AddNewMateFormVC.h"
+i"AddNewMateForm.h"
+i"Mate.h"
+i"Services.h"
+i"DataManager.h"
+i"MenuList.h"
+i"Category.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddText.xib
+c000000004BA6CD1B0000000000004B03
+t1269222683
+s19203
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddTextCell.h
+c000000004BA6C7D700000000000001BB
+t1269221335
+s443
+i<Foundation/Foundation.h>
+i"IBTableViewCell.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/AddTextCell.m
+c000000004BA6C3740000000000000274
+t1269220212
+s628
+i"AddTextCell.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/BucketedHash.h
+c000000004BA071A2000000000000020C
+t1268806050
+s524
+i<Foundation/Foundation.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/BucketedHash.m
+c000000004BA0719E00000000000004AB
+t1268806046
+s1195
+i"BucketedHash.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/Category.h
+c000000004BA073C40000000000000262
+t1268806596
+s610
+i<Foundation/Foundation.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/Category.m
+c000000004BA07EC600000000000007D2
+t1268809414
+s2002
+i"Category.h"
+i"Mate.h"
+i"BucketedHash.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/Classes/Mate.h
+c000000004BA6B17C00000000000003BD
+t1269215612
+s957
+i<Foundation/Foundation.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/Classes/Mate.m
+c000000004BA6B4D7000000000000033C
+t1269216471
+s828
+i"Mate.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterAppDelegate.h
+c000000004BA677BE00000000000001CC
+t1269200830
+s460
+i<UIKit/UIKit.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterAppDelegate.m
+c000000004BA67C430000000000000353
+t1269201987
+s851
+i"matemeterAppDelegate.h"
+i"MateListVC.h"
+i"Services.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/DataManager.h
+c000000004B9488430000000000000135
+t1268025411
+s309
+i<Foundation/Foundation.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/DataManager.m
+c000000004BA67C2600000000000001B6
+t1269201958
+s438
+i"DataManager.h"
+i"Mate.h"
+i"Services.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/Expense.h
+c000000004BA6C79D0000000000000120
+t1269221277
+s288
+i<Foundation/Foundation.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/Expense.m
+c000000004BA6C9B70000000000000142
+t1269221815
+s322
+i"Expense.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/ExpenseList.h
+c000000004BA6B4C50000000000000151
+t1269216453
+s337
+i<Foundation/Foundation.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/ExpenseList.m
+c000000004BA6BA480000000000000A8D
+t1269217864
+s2701
+i"ExpenseList.h"
+i"Mate.h"
+i"AddNewMateCell.h"
+i"AddNewExpenseForm.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.h
+c000000004B8F52290000000000000286
+t1267683881
+s646
+i<UIKit/UIKit.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m
+c000000004B8F522B0000000000000333
+t1267683883
+s819
+i"IBTableViewCell.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/MainWindow.xib
+c000000004B8E0AE90000000000003D1E
+t1267600105
+s15646
+
+N/Users/buf/Code/iphonematemeter/matemeter/MateCell.h
+c000000004BA6304F000000000000018C
+t1269182543
+s396
+i<Foundation/Foundation.h>
+i"IBTableViewCell.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/MateCell.m
+c000000004BA66C24000000000000030F
+t1269197860
+s783
+i"MateCell.h"
+i"Mate.h"
+i"BucketedHash.h"
+i"Category.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/MateCell.xib
+c000000004BA6736F0000000000004DE3
+t1269199727
+s19939
+
+N/Users/buf/Code/iphonematemeter/matemeter/MateListVC.h
+c000000004B9E3DFA000000000000010E
+t1268661754
+s270
+i<UIKit/UIKit.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/MateListVC.m
+c000000004BA6AE750000000000000A9C
+t1269214837
+s2716
+i"MateListVC.h"
+i"AddNewMateCell.h"
+i"AddNewMateFormVC.h"
+i"Services.h"
+i"DataManager.h"
+i"MateCell.h"
+i"MenuList.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/Menu.xib
+c000000004B948ABD00000000000051DB
+t1268026045
+s20955
+
+N/Users/buf/Code/iphonematemeter/matemeter/MenuCell.h
+c000000004BA07A1D00000000000001FB
+t1268808221
+s507
+i<Foundation/Foundation.h>
+i"IBTableViewCell.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/MenuCell.m
+c000000004BA07FED0000000000000372
+t1268809709
+s882
+i"MenuCell.h"
+i"Mate.h"
+i"BucketedHash.h"
+i"Category.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/MenuCell.xib
+c000000004BA673780000000000004E8E
+t1269199736
+s20110
+
+N/Users/buf/Code/iphonematemeter/matemeter/MenuList.h
+c000000004B9E3D5E000000000000011A
+t1268661598
+s282
+i<Foundation/Foundation.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/MenuList.m
+c000000004BA6BA750000000000000895
+t1269217909
+s2197
+i"MenuList.h"
+i"Mate.h"
+i"MenuCell.h"
+i"Category.h"
+i"BucketedHash.h"
+i"MateListVC.h"
+i"ExpenseList.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/Services.h
+c000000004B947CD40000000000000127
+t1268022484
+s295
+i<Foundation/Foundation.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/Services.m
+c000000004B9486EA0000000000000225
+t1268025066
+s549
+i"Services.h"
+i"matemeterAppDelegate.h"
+i"DataManager.h"
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app.dSYM
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/AddDate.nib
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/AddNewMate.nib
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/AddNewMateForm.nib
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/AddText.nib
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/Info.plist
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/MainWindow.nib
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/Mate Meter
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/MateCell.nib
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/Menu.nib
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/MenuCell.nib
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/PkgInfo
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/ResourceRules.plist
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/AddNewExpenseForm.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/AddNewMateCell.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/AddNewMateForm.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/AddNewMateFormVC.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/AddTextCell.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/BucketedHash.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/Category.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/DataManager.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/Expense.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/ExpenseList.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/IBTableViewCell.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/Mate Meter.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/Mate.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/MateCell.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/MateListVC.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/MenuCell.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/MenuList.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/Services.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/main.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/matemeterAppDelegate.o
+t2
+s0
+
+N/Users/buf/Code/iphonematemeter/matemeter/main.m
+c000000004B8DB3050000000000000163
+t1267577605
+s355
+i<UIKit/UIKit.h>
+
+N/Users/buf/Code/iphonematemeter/matemeter/matemeter_Prefix.pch
+c000000004B8DB30500000000000000BB
+t1267577605
+s187
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bzfgdxzgdvbyflenbxtgjwjiljgw/matemeter_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-hjnzxolvvharmadnakorviyxxtyg/matemeter_Prefix.pch.gch
+t2
+s0
+
+Nmatemeter-Info.plist
+c000000004B8DB305000000000000038D
+t1267577605
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies291004614#291004614#0(139"[BEROR]Code Sign error: a valid provisioning profile matching the application's Identifier 'com.yourcompany.Mate-Meter' could not be found1(4@131"Code Sign error: a valid provisioning profile matching the application's Identifier 'com.yourcompany.Mate-Meter' could not be found291004614#18446744073709551615#0#0(1@0"0(0#1#0"7947009927035180032#0"0#
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/AddNewExpenseForm.o" /Users/buf/Code/iphonematemeter/matemeter/AddNewExpenseForm.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/AddNewMateCell.o" /Users/buf/Code/iphonematemeter/matemeter/AddNewMateCell.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/AddNewMateForm.o" /Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/AddNewMateFormVC.o" /Users/buf/Code/iphonematemeter/matemeter/AddNewMateFormVC.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/AddTextCell.o" /Users/buf/Code/iphonematemeter/matemeter/AddTextCell.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/BucketedHash.o" /Users/buf/Code/iphonematemeter/matemeter/BucketedHash.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/Category.o" /Users/buf/Code/iphonematemeter/matemeter/Category.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/DataManager.o" /Users/buf/Code/iphonematemeter/matemeter/DataManager.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/Expense.o" /Users/buf/Code/iphonematemeter/matemeter/Expense.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/ExpenseList.o" /Users/buf/Code/iphonematemeter/matemeter/ExpenseList.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/IBTableViewCell.o" /Users/buf/Code/iphonematemeter/matemeter/IBTableViewCell.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/Mate.o" /Users/buf/Code/iphonematemeter/matemeter/Classes/Mate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/MateCell.o" /Users/buf/Code/iphonematemeter/matemeter/MateCell.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/MateListVC.o" /Users/buf/Code/iphonematemeter/matemeter/MateListVC.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/MenuCell.o" /Users/buf/Code/iphonematemeter/matemeter/MenuCell.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/MenuList.o" /Users/buf/Code/iphonematemeter/matemeter/MenuList.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/Services.o" /Users/buf/Code/iphonematemeter/matemeter/Services.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/main.o" /Users/buf/Code/iphonematemeter/matemeter/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/matemeter.build/Debug-iphoneos/Mate Meter.build/Objects-normal/armv6/matemeterAppDelegate.o" /Users/buf/Code/iphonematemeter/matemeter/Classes/matemeterAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB /Users/buf/Code/iphonematemeter/matemeter/AddDate.xib
+r0
+
+CCompileXIB /Users/buf/Code/iphonematemeter/matemeter/AddNewMate.xib
+r0
+
+CCompileXIB /Users/buf/Code/iphonematemeter/matemeter/AddNewMateForm.xib
+r0
+
+CCompileXIB /Users/buf/Code/iphonematemeter/matemeter/AddText.xib
+r0
+
+CCompileXIB /Users/buf/Code/iphonematemeter/matemeter/MainWindow.xib
+r0
+
+CCompileXIB /Users/buf/Code/iphonematemeter/matemeter/MateCell.xib
+r0
+
+CCompileXIB /Users/buf/Code/iphonematemeter/matemeter/Menu.xib
+r0
+
+CCompileXIB /Users/buf/Code/iphonematemeter/matemeter/MenuCell.xib
+r0
+
+CCpResource "build/Debug-iphoneos/Mate Meter.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/ResourceRules.plist
+r0
+
+CCpResource "build/Debug-iphoneos/Mate Meter.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+r0
+
+CGenerateDSYMFile "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app.dSYM" "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/Mate Meter"
+r0
+
+CLd "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/Mate Meter" normal armv6
+r0
+
+CProcessInfoPlistFile "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app/Info.plist" matemeter-Info.plist
+r0
+
+CProcessPCH /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-bzfgdxzgdvbyflenbxtgjwjiljgw/matemeter_Prefix.pch.gch matemeter_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/Xd/XdZHP9KdGk04T4CQESx6yU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/matemeter_Prefix-hjnzxolvvharmadnakorviyxxtyg/matemeter_Prefix.pch.gch matemeter_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CTouch "/Users/buf/Code/iphonematemeter/matemeter/build/Debug-iphoneos/Mate Meter.app"
+r0
+

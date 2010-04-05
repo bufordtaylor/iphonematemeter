@@ -9,16 +9,24 @@
 #import "matemeterAppDelegate.h"
 #import "MateListVC.h"
 #import "Services.h"
+#import "Friend.h"
+#import "Mate.h"
+#import "DataManager.h"
 
 @implementation matemeterAppDelegate
 
 @synthesize window;
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {   
 	services = [[Services alloc] init];
+	[[services dm] checkDatabaseExists];
+	
 	matesVC = [[MateListVC alloc] init];
+	
 	nav = [[UINavigationController alloc] initWithRootViewController:matesVC];
+	
+	
 	
 	
     // Override point for customization after app launch    
@@ -27,6 +35,7 @@
 	
 	return YES;
 }
+
 
 
 - (void)dealloc {
@@ -39,6 +48,5 @@
 -(Services*) services {
 	return services;
 }
-
 
 @end

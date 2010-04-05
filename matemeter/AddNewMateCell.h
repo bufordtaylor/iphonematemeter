@@ -14,5 +14,6 @@
 }
 
 -(id) initWithReuseIdentifier:(NSString*)ri;
+-(void) changeTextTo:(NSString*) text;
 
 @end

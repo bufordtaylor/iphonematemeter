@@ -16,16 +16,28 @@
 @synthesize start_date;
 @synthesize age;
 @synthesize relation;
+@synthesize category;
+@synthesize dateModified;
+@synthesize expenses;
+@synthesize ID;
+
+NSString *const RELATION_FRIENDS = @"friends";
+NSString *const RELATION_EXCLUSIVELY_DATING = @"exclusively dating";
+NSString *const RELATION_CASUALLY_DATING = @"casually dating";
 
 -(id) init {
 	if (self = [super init]){
-		name = nil;
-		sex = nil;
-		start_date = nil;
-		age = nil;
-		relation = nil;
+		expenses = [[NSMutableArray alloc] init];
 	}
 	return self;
+}
+
+-(id) initWithID:(int)i {
+	if (self = [super init]){
+		expenses = [[NSMutableArray alloc] init];
+		self.ID = i;
+	}
+	return self;	
 }
 
 -(void) dealloc {
@@ -34,7 +46,13 @@
 	[start_date release];
 	[age release];
 	[relation release];
+	[dateModified release];
+	[expenses release];
 	[super dealloc];
+}
+
+-(void) updateDateModified {
+	self.dateModified = [NSDate date];
 }
 
 

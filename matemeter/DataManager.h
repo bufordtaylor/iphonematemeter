@@ -7,14 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <sqlite3.h>
 
 @class Mate;
 
 
 @interface DataManager : NSObject {
 	NSMutableArray* mates;
+	Mate* currentMate;
+	
+	NSString* dbPath;
+	NSString* dbName;
 }
 
 @property (nonatomic, retain) NSMutableArray* mates;
+@property (nonatomic, retain) Mate* currentMate;
+@property (readwrite, copy) NSString* dbPath;
 
 @end

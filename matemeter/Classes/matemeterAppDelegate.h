@@ -9,17 +9,24 @@
 #import <UIKit/UIKit.h>
 
 
+
 @class MateListVC;
 @class Services;
 
 @interface matemeterAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
 	UINavigationController* nav;
+	
+
+	NSMutableArray* friends;
+
+	
 	MateListVC* matesVC;
 	Services* services;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+
 
 -(Services*) services;
 
