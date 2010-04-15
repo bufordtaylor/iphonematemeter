@@ -9,6 +9,7 @@
 #import "MateListVC.h"
 #import "AddNewMateCell.h"
 #import "AddNewMateFormVC.h"
+#import "AddNewMateForm.h"
 #import "Services.h"
 #import "DataManager.h"
 #import "MateCell.h"
@@ -18,7 +19,7 @@
 
 -(id) init {
 	if (self = [super initWithStyle:UITableViewStyleGrouped]) {
-		[[[Services services] dm] populateMates];
+		
 		
 		self.title = @"Current Mates";
 		UIBarButtonItem* profileBtn = [[[UIBarButtonItem alloc] init] autorelease];
@@ -41,7 +42,7 @@
 
 
 -(void) viewWillAppear:(BOOL)animated {
-	
+	[[[Services services] dm] populateMates];
 	NSLog(@"%d mates", [[[Services services] dm].mates count]);
 	[self.tableView reloadData];
 }
@@ -85,18 +86,20 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	
-	if ([[[Services services] dm].mates count] > 0) {
+	if (indexPath.section == 0 && [[[Services services] dm].mates count] > 0) {
 		Mate* mate = [[[Services services] dm].mates objectAtIndex:indexPath.row];
 		[[Services services] dm].currentMate = mate;
+		NSLog(@"push MenuList");
 		[self.navigationController pushViewController:[[[MenuList alloc] initWithMate:mate] autorelease] animated:YES];
 	}
 
 	if([self isAddMateIndexPath:indexPath]){
-		AddNewMateFormVC* ivc = [[[AddNewMateFormVC alloc] init] autorelease];
+		NSLog(@"new mate form");
+		AddNewMateForm* ivc = [[AddNewMateForm alloc] initWithNibName:@"AddNewMateForm" bundle:nil];
 		[self presentModalViewController:ivc animated:YES];
 		//[self.navigationController pushViewController:[[[AddNewMateFormVC alloc] init] autorelease] animated:YES];
 	}
-	
+	NSLog(@"wtf!!");
 
 }
 

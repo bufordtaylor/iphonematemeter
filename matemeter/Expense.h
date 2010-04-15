@@ -9,16 +9,22 @@
 #import <Foundation/Foundation.h>
 
 @interface Expense : NSObject {
-	NSDecimalNumber* cost;	
+	int ID;
+	int mateID;
+	int cost;	
 	NSString* description;
 	NSDate* date;
-	NSDecimalNumber* rating;
+	int rating;
 }
 
-@property (nonatomic, retain) NSDecimalNumber* cost;
-@property (nonatomic, retain) NSString* description
-;
+@property (readwrite) int ID;
+@property (readwrite) int mateID;
+
+@property (readwrite) int cost;
+@property (nonatomic, retain) NSString* description;
 @property (nonatomic, retain) NSDate* date;
-@property (nonatomic, retain) NSDecimalNumber* rating;
+@property (readwrite) int rating;
+
+-(NSString*) date;
 
 @end

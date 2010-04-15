@@ -34,7 +34,6 @@
 }
 
 -(void) dealloc {
-	[expense release];
 	[super dealloc];
 }
 
@@ -47,7 +46,6 @@
 	NSLog(@"Date: %@", date);
 	if (expense) {
 		expense.date = [[cell datepicker] date];
-
 	}
 	[self.navigationController popViewControllerAnimated:YES];
 }

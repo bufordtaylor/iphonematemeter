@@ -25,7 +25,9 @@
 		97B71AF41167052E003D2459 /* AddRatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B71AF31167052E003D2459 /* AddRatingCell.m */; };
 		97B71B0C1167EB82003D2459 /* AddRatingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B71B0B1167EB82003D2459 /* AddRatingVC.m */; };
 		97B71CEF11690BD2003D2459 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B71CEE11690BD2003D2459 /* Friend.m */; };
-		97B71E5211694F0D003D2459 /* matemeter.sql in Resources */ = {isa = PBXBuildFile; fileRef = 97B71E5111694F0D003D2459 /* matemeter.sql */; };
+		97B7213A116C4753003D2459 /* doneup.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B72139116C4753003D2459 /* doneup.png */; };
+		97B7213C116C4757003D2459 /* donedown.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B7213B116C4757003D2459 /* donedown.png */; };
+		97B72324116D21B6003D2459 /* matemeter.sql in Resources */ = {isa = PBXBuildFile; fileRef = 97B72323116D21B6003D2459 /* matemeter.sql */; };
 		97FB385B1144B17600529047 /* Services.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB385A1144B17600529047 /* Services.m */; };
 		97FB385E1144B2D000529047 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB385D1144B2D000529047 /* DataManager.m */; };
 		97FB38A01144C04500529047 /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97FB389F1144C04500529047 /* Menu.xib */; };
@@ -84,7 +86,9 @@
 		97B71B0B1167EB82003D2459 /* AddRatingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRatingVC.m; sourceTree = "<group>"; };
 		97B71CED11690BD2003D2459 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
 		97B71CEE11690BD2003D2459 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
-		97B71E5111694F0D003D2459 /* matemeter.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = matemeter.sql; sourceTree = "<group>"; };
+		97B72139116C4753003D2459 /* doneup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doneup.png; sourceTree = "<group>"; };
+		97B7213B116C4757003D2459 /* donedown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donedown.png; sourceTree = "<group>"; };
+		97B72323116D21B6003D2459 /* matemeter.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = matemeter.sql; sourceTree = "<group>"; };
 		97FB38591144B17600529047 /* Services.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
 		97FB385A1144B17600529047 /* Services.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Services.m; sourceTree = "<group>"; };
 		97FB385C1144B2D000529047 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
@@ -191,10 +195,12 @@
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				97FD0FF4115ED1980049392F /* AddNewRatingCell.xib */,
 				97FB389F1144C04500529047 /* Menu.xib */,
+				97B72323116D21B6003D2459 /* matemeter.sql */,
 				9749DC0E1140180A0056B12B /* AddNewMateForm.xib */,
+				97B72139116C4753003D2459 /* doneup.png */,
+				97B7213B116C4757003D2459 /* donedown.png */,
 				97FD0FFC11604B4E0049392F /* KeyValCell.xib */,
 				97FB40771156627F00529047 /* MateCell.xib */,
-				97B71E5111694F0D003D2459 /* matemeter.sql */,
 				97FD0F42115EC5E50049392F /* AddLargeText.xib */,
 				9749DB96113F872F0056B12B /* AddNewMate.xib */,
 				8D1107310486CEB800E47090 /* matemeter-Info.plist */,
@@ -361,7 +367,9 @@
 				97FD0FF5115ED1980049392F /* AddNewRatingCell.xib in Resources */,
 				97FD0FFD11604B4E0049392F /* KeyValCell.xib in Resources */,
 				97B71AAE1164EF2C003D2459 /* AddRating.xib in Resources */,
-				97B71E5211694F0D003D2459 /* matemeter.sql in Resources */,
+				97B7213A116C4753003D2459 /* doneup.png in Resources */,
+				97B7213C116C4757003D2459 /* donedown.png in Resources */,
+				97B72324116D21B6003D2459 /* matemeter.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,8 @@
 #import "Category.h"
 #import "Mate.h"
 #import "BucketedHash.h"
+#import "Services.h"
+#import "DataManager.h"
 
 @implementation Category
 
@@ -32,12 +34,13 @@
 }
 
 -(void) setupWithMate:(Mate*)m {
+	
+	NSString* expenseCount = [NSString stringWithFormat:@"(%d)", (int)[[[Services services] dm].currentMate.expenses count]];
+	
 	if ([m.relation isEqualToString:@"exclusively dating"]) {
 		NSString* subtitle = @"0 entries"; //THIS WILL EVENTUALLY BE AN IMAGE
 		[categoryNames addObject:subtitle toKey:@"Social Circle"];
-		
-		NSString*  subtitle2 = @"1 entry";
-		[categoryNames addObject:subtitle2 toKey:@"Expenses"];
+		[categoryNames addObject:expenseCount toKey:@"Expenses"];
 		
 		NSString* subtitle3 = @"2 entries";
 		[categoryNames addObject:subtitle3 toKey:@"Sex Life"];
@@ -48,8 +51,7 @@
 		
 	//////////////////////////CASUALLY DATING//////////////////////////////	
 	} else if ([m.relation isEqualToString:@"casually dating"]) {
-		NSString*  subtitle2 = @"1 entry";
-		[categoryNames addObject:subtitle2 toKey:@"Expenses"];
+		[categoryNames addObject:expenseCount toKey:@"Expenses"];
 		
 		NSString* subtitle3 = @"2 entries";
 		[categoryNames addObject:subtitle3 toKey:@"Sex Life"];
@@ -59,8 +61,7 @@
 		
 	//////////////////////////////FRIENDS////////////////////////////////	
 	} else if ([m.relation isEqualToString:@"friends"]) {
-		NSString*  subtitle2 = @"1 entry";
-		[categoryNames addObject:subtitle2 toKey:@"Expenses"];
+		[categoryNames addObject:expenseCount toKey:@"Expenses"];
 		
 		rows = [NSNumber numberWithInt:[categoryNames numKeys]];
 		sections = [NSNumber numberWithInt:1];

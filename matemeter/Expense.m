@@ -15,20 +15,27 @@
 @synthesize description;
 @synthesize date;
 @synthesize rating;
+@synthesize ID;
+@synthesize mateID;
 
-
--(id) init {
+-(id) initWithID:(int)_ID {
 	if (self = [super init]){
+		self.ID = _ID;
 	}
 	return self;
 }
 
 -(void) dealloc {
-	[cost release];
 	[description release];
 	[date release];
-	[rating release];
 	[super dealloc];
+}
+
+-(NSString*) datestr {
+	NSDateFormatter* dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+	[dateFormatter setDateFormat:@"yyyy-mm-dd hh:mm:ss"];
+	NSString* strdate = [dateFormatter stringFromDate:self.date];
+	return strdate;
 }
 
 @end

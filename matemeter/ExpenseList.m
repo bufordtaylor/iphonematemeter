@@ -21,7 +21,7 @@
 
 -(id) initWithMate:(Mate *)m {
 	if (self = [super initWithStyle:UITableViewStyleGrouped]) {
-		mate = [m retain];
+		mate = [[Services services] dm].currentMate;
 		self.title = @"Expenses";
 		UIBarButtonItem *backButton = [[[UIBarButtonItem alloc] initWithTitle:@"Cancel" 
 																		style:UIBarButtonItemStyleBordered	 

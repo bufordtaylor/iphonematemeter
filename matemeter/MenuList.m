@@ -21,19 +21,24 @@
 
 -(id) initWithMate:(Mate *)m {
 	if (self = [super initWithStyle:UITableViewStyleGrouped]) {
-		mate = [m retain];
-		if (!mate){
-			mate = (Mate*)[[Services services] dm].currentMate;
-		}
+		mate = (Mate*)[[Services services] dm].currentMate;
+		Category* category = [[[Category alloc] initWithMate:mate] autorelease];
+		
+		mate.category = category;
+		
 		self.title = mate.name;
-		UIBarButtonItem *backButton = [[[UIBarButtonItem alloc] initWithTitle:@"Mates" 
-																		style:UIBarButtonItemStyleBordered	 
-																	   target:self	 
-																	   action:@selector(backToMates:)] autorelease];
-		self.navigationItem.leftBarButtonItem = backButton;
+		UIBarButtonItem* backBtn = [[[UIBarButtonItem alloc] init] autorelease];
+		backBtn.title = @"Mates";
+		self.navigationItem.backBarButtonItem = backBtn;
 	}
 	return self;
 	
+}
+
+-(void) viewWillAppear:(BOOL)animated {
+	[[[Services services] dm] populateExpensesFromMateID:mate.ID];
+	NSLog(@"%d expenses", [[[Services services] dm].expenses count]);
+	[self.tableView reloadData];
 }
 
 -(void) dealloc {
@@ -41,7 +46,7 @@
 }
 
 - (void)backToMates:(id)sender {
-	[self.navigationController pushViewController:[[[MateListVC alloc] init] autorelease] animated:YES]; 
+	[self.navigationController popViewControllerAnimated:YES]; 
 	
 }
 
@@ -65,9 +70,7 @@
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	NSLog(@"here");
 	NSString* categoryTitle = (NSString*)[[[mate.category categoryNames]  keys] objectAtIndex:indexPath.row];
-	NSLog(@"Selected %@", categoryTitle);
 	if ([categoryTitle isEqualToString:@"Expenses"]) {
 		[self.navigationController pushViewController:[[[ExpenseList alloc] initWithMate:mate] autorelease] animated:YES];
 	}

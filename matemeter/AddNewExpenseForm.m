@@ -33,25 +33,32 @@
 		saveBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(tapSave)];
 		saveBtn.title = @"Save";
 		
+		
+		doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
+		doneButton.tag = 99;
+		doneButton.frame = CGRectMake(0, 163, 106, 53);
+		doneButton.adjustsImageWhenHighlighted = NO;
+		[doneButton setImage:[UIImage imageNamed:@"doneup.png"] forState:UIControlStateNormal];
+		[doneButton setImage:[UIImage imageNamed:@"downdown.png"] forState:UIControlStateHighlighted];
+		[doneButton addTarget:self action:@selector(tapDone) forControlEvents:UIControlEventTouchUpInside];
+		[doneButton retain];
 
 	}
+	mate = [[Services services] dm].currentMate;
 	return self;
 }
 
 -(id) initWithMate:(Mate*) m {
 	if (self = [self init]) {
-		[m retain];
-		mate = m;
 	}
 	return self;
 }
 
 -(void) showSaveButton {
-	if (!([expense.cost isEqual:[NSDecimalNumber notANumber]]) && ([[expense.description stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] > 0)) {
+	if ((expense.cost >= 0) && ([[expense.description stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] > 0)) {
 		self.navigationItem.rightBarButtonItem = saveBtn;
 	}	
 }
-
 
 
 
@@ -65,8 +72,7 @@
 }
 
 -(void) dealloc {
-
-	[expense release];
+	[doneButton release];
 	[costTextCell release];
 	[descriptionTextCell release];
 	[dateCell release];
@@ -79,13 +85,8 @@
 
 -(void) tapSave {
 	[self saveInfo];
-	if (updateExpense) {
-		NSMutableArray *discardedItems = [NSMutableArray array];
-		[discardedItems addObject:expense];
-		[[[Services services] dm].currentMate.expenses removeObjectsInArray:discardedItems];
-		[discardedItems release];
-	}
-	[[[Services services] dm].currentMate.expenses addObject:expense];
+	//[[[Services services] dm].currentMate.expenses addObject:expense];
+	//NSLog(@"EXPENSE mate_id: %d, description: %@, cost: %d, date %@, rating: %d", mate.ID, expense.description, expense.cost, [expense date], expense.rating);
 	NSLog(@"Form expense count %d", [[[Services services] dm].currentMate.expenses count]);
 	[self.navigationController popViewControllerAnimated:YES];
 }
@@ -93,12 +94,13 @@
 
 -(void) tapDone {
 	if ([[costTextCell txtBox] isFirstResponder]) [[costTextCell txtBox] resignFirstResponder];
+	if ([[descriptionTextCell txtBox] isFirstResponder]) [[descriptionTextCell txtBox] resignFirstResponder];
 	self.navigationItem.rightBarButtonItem = nil;
 	[self saveInfo];
-	expense.cost = [NSDecimalNumber decimalNumberWithString:[costTextCell txtBox].text];
+	expense.cost = [[costTextCell txtBox].text intValue];
 	[self showSaveButton];
 	
-	NSLog(@"cost is %@", expense.cost);
+	NSLog(@"cost is %d", expense.cost);
 //	if(name && age && ([[name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] > 0)  && ([[age stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] > 0)){
 //		self.navigationItem.rightBarButtonItem = saveBtn;
 //	}
@@ -107,13 +109,19 @@
 
 -(void) saveInfo {
 	if (!expense) {
-		NSLog(@"Makin' new expense");
-		expense = [[Expense alloc] init];
+		[[Services services] dm].currentExpense = [[Expense alloc] init];
+		expense = [[Services services] dm].currentExpense;
 		expense.date = [NSDate date];
-		expense.rating = [NSDecimalNumber decimalNumberWithDecimal:[[NSNumber numberWithFloat:11.0f] decimalValue]];
+		expense.rating = 11;
+		expense.mateID = mate.ID;
+		expense.cost = -1;
 	}
-	expense.cost = [NSDecimalNumber decimalNumberWithString:[costTextCell txtBox].text];
+	if ([[[costTextCell txtBox].text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] > 0) {
+		expense.cost = [[costTextCell txtBox].text intValue];
+	}
 	expense.description = [descriptionTextCell txtBox].text;
+	NSLog(@"EXPENSE description: %@, cost: %d,  rating: %d", expense.description, expense.cost, expense.rating);
+	
 }
 
 
@@ -152,10 +160,9 @@
 			[descriptionTextCell txtBox].delegate = self;
 			[descriptionTextCell txtBox].keyboardType = UIKeyboardTypeAlphabet;
 			descriptionTextCell.selectionStyle = UITableViewCellSelectionStyleNone;
-			
-			if (expense) {
-				[descriptionTextCell setExistingValue:expense.description];
-			}
+		}
+		if (expense) {
+			[descriptionTextCell setExistingValue:expense.description];
 		}
 		return descriptionTextCell;
 	}
@@ -171,10 +178,9 @@
 			[costTextCell txtBox].delegate = self;
 			[costTextCell txtBox].keyboardType = UIKeyboardTypeNumberPad;
 			costTextCell.selectionStyle = UITableViewCellSelectionStyleNone;
-			
-			if (expense && ![expense.cost isEqual:[NSDecimalNumber notANumber]] ) {
-				[costTextCell setExistingValue:[expense.cost stringValue]];
-			}
+		}
+		if (expense && expense.cost >= 0 ) {
+			[costTextCell setExistingValue:[NSString stringWithFormat:@"%d", expense.cost]];
 		}
 		return costTextCell;
 	}
@@ -210,15 +216,16 @@
 
 			
 		}
-		if(expense && [expense.rating intValue] < 11){
-			[ratingCell setTheValues:@"How satisfied were you?" valStart:[NSString stringWithFormat:@"%@", expense.rating]];
+		if(expense && expense.rating < 11){
+			[ratingCell setTheValues:@"How satisfied were you?" valStart:[NSString stringWithFormat:@"%d", expense.rating]];
 		}
 		return ratingCell;
 	}
-	
+	NSLog(@"WE SHOULD NEVER REACH HERE");
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 	if (indexPath.row == 2) {
 		[self saveInfo];
 		[self.navigationController pushViewController:[[[AddDateVC alloc] initWithExpense:expense] autorelease] animated:YES];
@@ -230,23 +237,17 @@
 }
 
 
-- (void)keyboardWillShow:(NSNotification *)notif
+-(void)viewWillAppear:(BOOL)animated
 {
-    //keyboard will be shown now. depending for which textfield is active, move up or move down the view appropriately
-	[self showDoneButton];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-	
 	if (expense) {
 		[self showSaveButton];
 		[self.tableView reloadData];
 	}
-	
+
     // register for keyboard notifications
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) 
 												 name:UIKeyboardWillShowNotification object:self.view.window]; 
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -254,6 +255,40 @@
 	// unregister for keyboard notifications while not visible.
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil]; 
 }
+
+
+
+- (void)keyboardWillShow:(NSNotification *)notif
+{
+	UIWindow* tempWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:1];
+	if ([[costTextCell txtBox] isFirstResponder]){
+		// locate keyboard view
+		
+		UIView* keyboard;
+		for(int i=0; i<[tempWindow.subviews count]; i++) {
+			keyboard = [tempWindow.subviews objectAtIndex:i];
+			// keyboard view found; add the custom button to it
+			if([[keyboard description] hasPrefix:@"<UIKeyboard"] == YES)
+				[keyboard addSubview:doneButton];
+		}
+	} else {
+		for(int i=0; i<[tempWindow.subviews count]; i++) {
+			if (doneButton.tag == 99) {
+				[doneButton removeFromSuperview];
+			}
+		}
+	}
+	[self showDoneButton];
+}
+
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+
+	return YES;
+	
+}
+
 
 
 @end

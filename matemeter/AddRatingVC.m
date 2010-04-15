@@ -10,7 +10,8 @@
 #import "Expense.h"
 #import "AddRatingCell.h"
 #import "AddNewExpenseForm.h"
-
+#import "Services.h"
+#import "DataManager.h"
 
 @implementation AddRatingVC
 
@@ -18,7 +19,7 @@
 
 -(id) initWithExpense:(Expense *)e {
 	if (self = [super init]) {
-		expense = [e retain];
+		expense = [[Services services] dm].currentExpense;
 		self.title = @"Add Rating";
 		UIBarButtonItem* backBtn = [[[UIBarButtonItem alloc] init] autorelease];
 		backBtn.title = @"Cancel";
@@ -36,14 +37,15 @@
 }
 
 -(void) dealloc {
-	[expense release];
 	[cell release];
 	[super dealloc];
 }
 
 -(void) tapSave {
+	NSLog(@"tapped Save");
 	if (expense) {
-		expense.rating = [NSDecimalNumber decimalNumberWithDecimal:[[NSNumber numberWithFloat:sliderValue] decimalValue]];
+		expense.rating = sliderValue;
+		NSLog(@"EXPENSE description: %@, cost: %d, date: %@,   rating: %d", expense.description, expense.cost, [expense datestr], expense.rating);
 	}
 	[self.navigationController popViewControllerAnimated:YES];
 }
@@ -69,8 +71,8 @@
 		cell = [[AddRatingCell alloc] initWithReuseIdentifier:AddRatingCellIden];
 		[[cell rating] addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
 	}
-	if([expense.rating intValue] <= 10){
-		sliderValue = [expense.rating intValue];
+	if(expense.rating <= 10){
+		sliderValue = expense.rating;
 	} else {
 		sliderValue = 5;
 	}	

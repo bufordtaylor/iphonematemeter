@@ -25,6 +25,8 @@
 	KeyvalCell* dateCell;
 	KeyvalCell* ratingCell;
 	BOOL updateExpense;
+	
+	UIButton* doneButton;
 }
 
 -(void) saveInfo;

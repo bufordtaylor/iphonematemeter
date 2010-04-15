@@ -7,16 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IBTableViewCell.h"
 
-@interface AddNewMateForm : IBTableViewCell <UITextFieldDelegate> {
+
+@interface AddNewMateForm : UIViewController <UITextFieldDelegate> {
 	IBOutlet UITextField* nameInput;
 	IBOutlet UISegmentedControl* sexInput;
 	IBOutlet UITextField* ageInput;
 	IBOutlet UISlider* relationInput;
 	IBOutlet UIDatePicker* dateInput;
 	IBOutlet UILabel* relationLabel;
+	
+	UIAlertView* dataFailurePopup;
+	IBOutlet UIBarButtonItem* rightButton;
+	UIButton* doneButton;
 }
+
+- (IBAction)cancelInsert;
+- (IBAction)completeInsert;
 
 -(id) initWithReuseIdentifier:(NSString*)ri;
 
