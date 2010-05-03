@@ -8,6 +8,7 @@
 
 #import "AddNewMateForm.h"
 #import "Services.h"
+#import "DataManager.h"
 
 
 @implementation AddNewMateForm
@@ -89,7 +90,7 @@
 	
 	NSLog(@"name %@, sex %@, age %@, relation %@, date %@", self.nameInput.text, sex, self.ageInput.text, self.relationLabel.text, date);
 	
-	[[[Services services] dm] insertMate:self.nameInput.text age:self.ageInput.text relation:self.relationLabel.text sex:sex date:date];
+	[[[Services services] dm] insertMate:self.nameInput.text age:self.ageInput.text relation:self.relationLabel.text sex:sex ddate:date];
 	[self dismissModalViewControllerAnimated:YES];
 }
 

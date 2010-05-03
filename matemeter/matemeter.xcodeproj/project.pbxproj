@@ -19,7 +19,6 @@
 		9749DB9B113F88C30056B12B /* AddNewMateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9749DB9A113F88C30056B12B /* AddNewMateCell.m */; };
 		9749DBA6113F89510056B12B /* IBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9749DBA5113F89510056B12B /* IBTableViewCell.m */; };
 		9749DBEB114014600056B12B /* AddNewMateForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 9749DBEA114014600056B12B /* AddNewMateForm.m */; };
-		9749DC05114017630056B12B /* AddNewMateFormVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9749DC04114017630056B12B /* AddNewMateFormVC.m */; };
 		9749DC0F1140180A0056B12B /* AddNewMateForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9749DC0E1140180A0056B12B /* AddNewMateForm.xib */; };
 		97AAA6171185277C00FDEFB9 /* Sex.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAA6161185277C00FDEFB9 /* Sex.m */; };
 		97AAA62811852CFB00FDEFB9 /* SexList.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAA62711852CFB00FDEFB9 /* SexList.m */; };
@@ -102,8 +101,6 @@
 		9749DBA5113F89510056B12B /* IBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBTableViewCell.m; sourceTree = "<group>"; };
 		9749DBE9114014600056B12B /* AddNewMateForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewMateForm.h; sourceTree = "<group>"; };
 		9749DBEA114014600056B12B /* AddNewMateForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewMateForm.m; sourceTree = "<group>"; };
-		9749DC03114017630056B12B /* AddNewMateFormVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewMateFormVC.h; sourceTree = "<group>"; };
-		9749DC04114017630056B12B /* AddNewMateFormVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewMateFormVC.m; sourceTree = "<group>"; };
 		9749DC0E1140180A0056B12B /* AddNewMateForm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewMateForm.xib; sourceTree = "<group>"; };
 		97AAA6151185277C00FDEFB9 /* Sex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sex.h; sourceTree = "<group>"; };
 		97AAA6161185277C00FDEFB9 /* Sex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sex.m; sourceTree = "<group>"; };
@@ -328,8 +325,6 @@
 				97FD1061116054AB0049392F /* AddDateVC.m */,
 				9749DAF0113E356A0056B12B /* MateListVC.h */,
 				9749DAF1113E356A0056B12B /* MateListVC.m */,
-				9749DC03114017630056B12B /* AddNewMateFormVC.h */,
-				9749DC04114017630056B12B /* AddNewMateFormVC.m */,
 			);
 			name = VCs;
 			sourceTree = "<group>";
@@ -550,7 +545,6 @@
 				9749DB9B113F88C30056B12B /* AddNewMateCell.m in Sources */,
 				9749DBA6113F89510056B12B /* IBTableViewCell.m in Sources */,
 				9749DBEB114014600056B12B /* AddNewMateForm.m in Sources */,
-				9749DC05114017630056B12B /* AddNewMateFormVC.m in Sources */,
 				97FB385B1144B17600529047 /* Services.m in Sources */,
 				97FB385E1144B2D000529047 /* DataManager.m in Sources */,
 				97FB3942114E700D00529047 /* MenuCell.m in Sources */,

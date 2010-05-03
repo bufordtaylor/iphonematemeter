@@ -303,7 +303,7 @@
 	}
 }
 
--(void) insertMate:(NSString*)name age:(NSString*)age relation:(NSString*)relation sex:(NSString*)sex date:(NSString*)date {
+-(void) insertMate:(NSString*)name age:(NSString*)age relation:(NSString*)relation sex:(NSString*)sex ddate:(NSString*)date {
 //CREATE TABLE IF NOT EXISTS mates (
 //	id INTEGER PRIMARY KEY, 
 //	name VARCHAR(50) not null, 

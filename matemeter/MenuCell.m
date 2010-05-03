@@ -38,7 +38,7 @@
 }
 
 -(UIImageView*) menuImage {
-	
+	return menuImage;
 }
 
 @end

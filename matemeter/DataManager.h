@@ -30,7 +30,7 @@
 }
 -(void) checkDatabaseExists;
 
--(void) insertMate:(NSString*)name age:(NSString*)age relation:(NSString*)relation sex:(NSString*)sex date:(NSString*)date;
+-(void) insertMate:(NSString*)name age:(NSString*)age relation:(NSString*)relation sex:(NSString*)sex ddate:(NSString*)date;
 -(void) insertExpense:(int)mate_id description:(NSString*)description start_date:(NSString*)start_date cost:(int)cost rating:(int)rating;
 -(void) insertSocial:(int)mate_id description:(NSString*)description start_date:(NSString*)start_date expand_or_decrease:(NSString*)expand_or_decrease rating:(int)rating;
 -(void) insertSex:(int)mate_id description:(NSString*)description start_date:(NSString*)start_date rating:(int)rating;
