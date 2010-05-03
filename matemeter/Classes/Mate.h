@@ -22,6 +22,9 @@
 	
 	
 	NSMutableArray* expenses;
+	NSMutableArray* socials;
+	NSMutableArray* sexes;
+	NSMutableArray* generals;
 	
 	
 	NSDate* dateModified;
@@ -39,6 +42,9 @@
 
 @property (nonatomic, retain) NSDate* dateModified;
 @property (nonatomic, retain) NSMutableArray* expenses;
+@property (nonatomic, retain) NSMutableArray* socials;
+@property (nonatomic, retain) NSMutableArray* sexes;
+@property (nonatomic, retain) NSMutableArray* generals;
 
 extern NSString *const RELATION_FRIENDS;
 extern NSString *const RELATION_EXCLUSIVELY_DATING;

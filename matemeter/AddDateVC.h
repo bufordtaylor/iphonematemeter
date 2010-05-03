@@ -10,14 +10,24 @@
 
 @class Expense;
 @class AddDateCell;
+@class Social;
+@class Sex;
+@class General;
 
 @interface AddDateVC : UITableViewController <UIPickerViewDelegate> {
 	
+	Social* social;
 	Expense* expense;
+	Sex* sex;
+	General* general;
 	AddDateCell* cell;
 
 }
 
 -(id) initWithExpense:(Expense*)e;
+-(id) initWithSocial:(Social*)s;
+-(id) initWithSex:(Sex*)s;
+-(id) initWithGeneral:(General*)g;
+
 
 @end

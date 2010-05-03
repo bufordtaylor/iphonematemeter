@@ -29,6 +29,8 @@
 	UIButton* doneButton;
 }
 
+-(id) initWithExpense:(Expense*) ex;
+-(id) initWithMate:(Mate*) m;
 -(void) saveInfo;
 -(void) showSaveButton;
 

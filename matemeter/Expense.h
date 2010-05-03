@@ -25,6 +25,6 @@
 @property (nonatomic, retain) NSDate* date;
 @property (readwrite) int rating;
 
--(NSString*) date;
+-(NSString*) datestr;
 
 @end

@@ -21,7 +21,6 @@
 -(id) initWithMate:(Mate*)m {
 	if (self = [super init]) {
 		categoryNames = [[BucketedHash alloc] initWithCapacity:3 ];
-		[self setupWithMate:m];
 	}
 	return self;
 }
@@ -36,15 +35,16 @@
 -(void) setupWithMate:(Mate*)m {
 	
 	NSString* expenseCount = [NSString stringWithFormat:@"(%d)", (int)[[[Services services] dm].currentMate.expenses count]];
+	NSString* socialCount = [NSString stringWithFormat:@"(%d)", (int)[[[Services services] dm].currentMate.socials count]];
+	NSString* sexCount = [NSString stringWithFormat:@"(%d)", (int)[[[Services services] dm].currentMate.sexes count]];
+	NSString* generalCount = [NSString stringWithFormat:@"(%d)", (int)[[[Services services] dm].currentMate.generals count]];
 	
 	if ([m.relation isEqualToString:@"exclusively dating"]) {
-		NSString* subtitle = @"0 entries"; //THIS WILL EVENTUALLY BE AN IMAGE
-		[categoryNames addObject:subtitle toKey:@"Social Circle"];
+		//NSString* subtitle = @"0 entries"; //THIS WILL EVENTUALLY BE AN IMAGE
+		[categoryNames addObject:socialCount toKey:@"Social Circle"];
 		[categoryNames addObject:expenseCount toKey:@"Expenses"];
-		
-		NSString* subtitle3 = @"2 entries";
-		[categoryNames addObject:subtitle3 toKey:@"Sex Life"];
-		
+		[categoryNames addObject:sexCount toKey:@"Sex Life"];
+		[categoryNames addObject:generalCount toKey:@"General"];
 		
 		rows = [NSNumber numberWithInt:[categoryNames numKeys]];
 		sections = [NSNumber numberWithInt:1];

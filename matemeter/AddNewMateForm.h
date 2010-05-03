@@ -25,8 +25,6 @@
 - (IBAction)cancelInsert;
 - (IBAction)completeInsert;
 
--(id) initWithReuseIdentifier:(NSString*)ri;
-
 -(UITextField*) nameInput;
 -(UITextField*) ageInput;
 -(UISegmentedControl*) sexInput;

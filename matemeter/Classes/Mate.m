@@ -19,6 +19,9 @@
 @synthesize category;
 @synthesize dateModified;
 @synthesize expenses;
+@synthesize sexes;
+@synthesize generals;
+@synthesize socials;
 @synthesize ID;
 
 NSString *const RELATION_FRIENDS = @"friends";
@@ -28,6 +31,9 @@ NSString *const RELATION_CASUALLY_DATING = @"casually dating";
 -(id) init {
 	if (self = [super init]){
 		expenses = [[NSMutableArray alloc] init];
+		socials = [[NSMutableArray alloc] init];
+		sexes = [[NSMutableArray alloc] init];
+		generals = [[NSMutableArray alloc] init];
 	}
 	return self;
 }
@@ -35,6 +41,9 @@ NSString *const RELATION_CASUALLY_DATING = @"casually dating";
 -(id) initWithID:(int)i {
 	if (self = [super init]){
 		expenses = [[NSMutableArray alloc] init];
+		socials = [[NSMutableArray alloc] init];
+		sexes = [[NSMutableArray alloc] init];
+		generals = [[NSMutableArray alloc] init];
 		self.ID = i;
 	}
 	return self;	
@@ -48,6 +57,9 @@ NSString *const RELATION_CASUALLY_DATING = @"casually dating";
 	[relation release];
 	[dateModified release];
 	[expenses release];
+	[socials release];
+	[sexes release];
+	[generals release];
 	[super dealloc];
 }
 

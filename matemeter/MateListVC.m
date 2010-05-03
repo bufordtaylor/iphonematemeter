@@ -8,8 +8,8 @@
 
 #import "MateListVC.h"
 #import "AddNewMateCell.h"
-#import "AddNewMateFormVC.h"
 #import "AddNewMateForm.h"
+#import "AddProfileForm.h"
 #import "Services.h"
 #import "DataManager.h"
 #import "MateCell.h"
@@ -21,9 +21,11 @@
 	if (self = [super initWithStyle:UITableViewStyleGrouped]) {
 		
 		
-		self.title = @"Current Mates";
+		self.title = @"Mates";
 		UIBarButtonItem* profileBtn = [[[UIBarButtonItem alloc] init] autorelease];
 		profileBtn.title = @"Profile";
+		profileBtn.target = self;
+		profileBtn.action = @selector(tapProfile);
 		self.navigationItem.rightBarButtonItem = profileBtn;
 	}
 	return self;
@@ -31,6 +33,11 @@
 
 -(void) dealloc {
 	[super dealloc];
+}
+
+-(void) tapProfile {
+	AddProfileForm* ivc = [[AddProfileForm alloc] initWithNibName:@"AddProfileForm" bundle:nil];
+	[self presentModalViewController:ivc animated:YES];
 }
 
 -(BOOL) isAddMateIndexPath:(NSIndexPath *)indexPath {
@@ -97,7 +104,6 @@
 		NSLog(@"new mate form");
 		AddNewMateForm* ivc = [[AddNewMateForm alloc] initWithNibName:@"AddNewMateForm" bundle:nil];
 		[self presentModalViewController:ivc animated:YES];
-		//[self.navigationController pushViewController:[[[AddNewMateFormVC alloc] init] autorelease] animated:YES];
 	}
 	NSLog(@"wtf!!");
 

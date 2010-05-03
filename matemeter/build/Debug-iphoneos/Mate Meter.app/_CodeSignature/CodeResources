@@ -6,7 +6,11 @@
 	<dict>
 		<key>AddDate.nib</key>
 		<data>
-		tWlvTJCcj+37x9RZsft6PvbaUig=
+		2Cfk/xatnPxWmi3GAUwzPFVs9Xw=
+		</data>
+		<key>AddLargeText.nib</key>
+		<data>
+		Exivju3N1ctOoZwIq9c5k2CJVIQ=
 		</data>
 		<key>AddNewMate.nib</key>
 		<data>
@@ -14,11 +18,27 @@
 		</data>
 		<key>AddNewMateForm.nib</key>
 		<data>
-		rsi1ebB7FZmWWs+iQ6v18c7lAG0=
+		gvhXFQXeq7NHcU58+FBKzO2+mF0=
+		</data>
+		<key>AddNewRatingCell.nib</key>
+		<data>
+		3dY1aEuIFRi6g5g922lh4irJcqg=
+		</data>
+		<key>AddRating.nib</key>
+		<data>
+		H769bPTjDXnQF6UYwLDqagsgkFA=
+		</data>
+		<key>AddSegment.nib</key>
+		<data>
+		lpf330KGeBG3Yb8/pFNzhwrZ/fo=
 		</data>
 		<key>AddText.nib</key>
 		<data>
-		0uGb/VVnHs1t6fCIgV3Lg1ayjHw=
+		o5cKQxt6CtdUu37bNtPSq/OCQyg=
+		</data>
+		<key>KeyValCell.nib</key>
+		<data>
+		g2EQ6HXcAbw9dUyq4BqKQQlD7B4=
 		</data>
 		<key>MainWindow.nib</key>
 		<data>
@@ -40,9 +60,21 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>donedown.png</key>
+		<data>
+		BVQDHkKOj1REMJso8SsLq8ofh6M=
+		</data>
+		<key>doneup.png</key>
+		<data>
+		Jexz06EZR7C3onm5W5oil5mqVtY=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		EpdaY3lEoKd7HGJ1R/G/sVjTWMQ=
+		</data>
+		<key>matemeter.sql</key>
+		<data>
+		Uzfzz0fWXDTUPqKVYFGUGgp3SNo=
 		</data>
 	</dict>
 	<key>rules</key>

@@ -51,6 +51,8 @@
 
 
 -(void) viewWillAppear:(BOOL)animated {
+	[[[Services services] dm] populateExpensesFromMateID:mate.ID];
+	[[Services services] dm].currentExpense = nil;
 	[self.tableView reloadData];
 }
 
@@ -97,6 +99,7 @@
 	
 	if ([mate.expenses count] > 0 && ![self isAddIndexPath:indexPath]) {
 		Expense* expense = [[[Services services] dm].currentMate.expenses objectAtIndex:indexPath.row];
+		[[Services services] dm].currentExpense = expense;
 		[self.navigationController pushViewController:[[[AddNewExpenseForm alloc] initWithExpense:expense] autorelease] animated:YES];
 	}
 	

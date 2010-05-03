@@ -17,7 +17,7 @@
 }
 
 -(id) initWithReuseIdentifier:(NSString*)ri;
--(void) setup:(NSString*)defaultLbl rating:(UISlider*) r;
+-(void) setup:(NSString*)defaultLbl rating:(NSDecimalNumber*) r;
 -(UILabel*) lbl;
 -(UISlider*) rating;
 

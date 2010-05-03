@@ -11,6 +11,9 @@
 
 @class Mate;
 @class Expense;
+@class Social;
+@class Sex;
+@class General;
 
 @interface MateCell : IBTableViewCell {
 	IBOutlet UILabel* mateName;
@@ -20,5 +23,8 @@
 -(id) initWithReuseIdentifier:(NSString*)ri;
 -(void) setupWithMate:(Mate*)m;
 -(void) setupWithExpense:(Expense*)ex;
+-(void) setupWithSocial:(Social*)s;
+-(void) setupWithSex:(Sex*)s;
+-(void) setupWithGeneral:(General*)g;
 
 @end

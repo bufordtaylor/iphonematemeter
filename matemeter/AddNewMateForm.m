@@ -83,7 +83,7 @@
 	
 	NSString* sex = [self.sexInput titleForSegmentAtIndex: [self.sexInput selectedSegmentIndex]];
 	NSDateFormatter* dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
-	[dateFormatter setDateFormat:@"yyyy-mm-dd hh:mm:ss"];
+	[dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
 	NSString* date = [dateFormatter stringFromDate:[self.dateInput date]];
 	
 	

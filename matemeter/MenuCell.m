@@ -37,4 +37,8 @@
 	menuSubtitle.text = subtitle;
 }
 
+-(UIImageView*) menuImage {
+	
+}
+
 @end

@@ -11,6 +11,9 @@
 #import "BucketedHash.h"
 #import "Category.h"
 #import "Expense.h"
+#import "Social.h"
+#import "Sex.h"
+#import "General.h"
 
 @implementation MateCell
 
@@ -43,6 +46,35 @@
 	
 	mateName.text = [NSString stringWithString:ex.description];
 	mateDate.text = [NSString stringWithString:[dateFormatter stringFromDate:ex.date]];
+	
+}
+
+-(void) setupWithSocial:(Social*)s {
+	
+	NSDateFormatter* dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+	[dateFormatter setDateFormat:@"MMM dd, yyyy"];
+	
+	mateName.text = [NSString stringWithString:s.description];
+	mateDate.text = [NSString stringWithString:[dateFormatter stringFromDate:s.date]];
+	
+}
+
+-(void) setupWithSex:(Sex*)s {
+	
+	NSDateFormatter* dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+	[dateFormatter setDateFormat:@"MMM dd, yyyy"];
+	
+	mateName.text = [NSString stringWithString:s.description];
+	mateDate.text = [NSString stringWithString:[dateFormatter stringFromDate:s.date]];
+	
+}
+-(void) setupWithGeneral:(General*)g {
+	
+	NSDateFormatter* dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+	[dateFormatter setDateFormat:@"MMM dd, yyyy"];
+	
+	mateName.text = [NSString stringWithString:g.description];
+	mateDate.text = [NSString stringWithString:[dateFormatter stringFromDate:g.date]];
 	
 }
 

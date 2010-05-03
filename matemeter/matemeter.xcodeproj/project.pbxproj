@@ -21,13 +21,39 @@
 		9749DBEB114014600056B12B /* AddNewMateForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 9749DBEA114014600056B12B /* AddNewMateForm.m */; };
 		9749DC05114017630056B12B /* AddNewMateFormVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9749DC04114017630056B12B /* AddNewMateFormVC.m */; };
 		9749DC0F1140180A0056B12B /* AddNewMateForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9749DC0E1140180A0056B12B /* AddNewMateForm.xib */; };
+		97AAA6171185277C00FDEFB9 /* Sex.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAA6161185277C00FDEFB9 /* Sex.m */; };
+		97AAA62811852CFB00FDEFB9 /* SexList.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAA62711852CFB00FDEFB9 /* SexList.m */; };
+		97AAA63111852E1B00FDEFB9 /* AddNewSexForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAA63011852E1B00FDEFB9 /* AddNewSexForm.m */; };
+		97AAA687118534B700FDEFB9 /* General.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAA686118534B700FDEFB9 /* General.m */; };
+		97AAA68C118536D300FDEFB9 /* GeneralList.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAA68B118536D300FDEFB9 /* GeneralList.m */; };
+		97AAA68F1185377D00FDEFB9 /* AddNewGeneralForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAA68E1185377D00FDEFB9 /* AddNewGeneralForm.m */; };
+		97AAAA44118CE21F00FDEFB9 /* AddProfileForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAAA43118CE21F00FDEFB9 /* AddProfileForm.m */; };
+		97AAAA4D118CE4ED00FDEFB9 /* AddProfileForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97AAAA4C118CE4ED00FDEFB9 /* AddProfileForm.xib */; };
+		97AAAAB1118CEFAA00FDEFB9 /* ApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAAAB0118CEFAA00FDEFB9 /* ApiManager.m */; };
+		97AAAAC6118D12E900FDEFB9 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAAAB5118D12E900FDEFB9 /* CDataScanner.m */; };
+		97AAAAC7118D12E900FDEFB9 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAAAB8118D12E900FDEFB9 /* CDataScanner_Extensions.m */; };
+		97AAAAC8118D12E900FDEFB9 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAAABA118D12E900FDEFB9 /* NSCharacterSet_Extensions.m */; };
+		97AAAAC9118D12E900FDEFB9 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAAABC118D12E900FDEFB9 /* NSDictionary_JSONExtensions.m */; };
+		97AAAACA118D12E900FDEFB9 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAAABE118D12E900FDEFB9 /* NSScanner_Extensions.m */; };
+		97AAAACB118D12E900FDEFB9 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAAAC1118D12E900FDEFB9 /* CJSONDeserializer.m */; };
+		97AAAACC118D12E900FDEFB9 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAAAC3118D12E900FDEFB9 /* CJSONScanner.m */; };
+		97AAAACD118D12E900FDEFB9 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAAAC5118D12E900FDEFB9 /* CJSONSerializer.m */; };
+		97AAAAD0118D132D00FDEFB9 /* ServerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAAACF118D132D00FDEFB9 /* ServerAdapter.m */; };
+		97AAAB3F118E1DCA00FDEFB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AAAB3E118E1DCA00FDEFB9 /* QuartzCore.framework */; };
+		97AAAB44118E1DE100FDEFB9 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAAB42118E1DE100FDEFB9 /* LoadingView.m */; };
+		97AAAC92118E8F3600FDEFB9 /* matemeter.sql in Resources */ = {isa = PBXBuildFile; fileRef = 97AAAC91118E8F3600FDEFB9 /* matemeter.sql */; };
 		97B71AAE1164EF2C003D2459 /* AddRating.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B71AAD1164EF2C003D2459 /* AddRating.xib */; };
 		97B71AF41167052E003D2459 /* AddRatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B71AF31167052E003D2459 /* AddRatingCell.m */; };
 		97B71B0C1167EB82003D2459 /* AddRatingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B71B0B1167EB82003D2459 /* AddRatingVC.m */; };
 		97B71CEF11690BD2003D2459 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B71CEE11690BD2003D2459 /* Friend.m */; };
 		97B7213A116C4753003D2459 /* doneup.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B72139116C4753003D2459 /* doneup.png */; };
 		97B7213C116C4757003D2459 /* donedown.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B7213B116C4757003D2459 /* donedown.png */; };
-		97B72324116D21B6003D2459 /* matemeter.sql in Resources */ = {isa = PBXBuildFile; fileRef = 97B72323116D21B6003D2459 /* matemeter.sql */; };
+		97C7CF7611815B90006D1F42 /* AddNewSocialForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C7CF7511815B90006D1F42 /* AddNewSocialForm.m */; };
+		97C7CF7911815C42006D1F42 /* Social.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C7CF7811815C42006D1F42 /* Social.m */; };
+		97C7CF9A11815DCD006D1F42 /* SocialList.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C7CF9911815DCD006D1F42 /* SocialList.m */; };
+		97C7D0581184C62A006D1F42 /* AddSegment.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97C7D0571184C62A006D1F42 /* AddSegment.xib */; };
+		97C7D07C1184D29D006D1F42 /* AddSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C7D07B1184D29D006D1F42 /* AddSegment.m */; };
+		97C7D07F1184D351006D1F42 /* AddSegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C7D07E1184D351006D1F42 /* AddSegmentCell.m */; };
 		97FB385B1144B17600529047 /* Services.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB385A1144B17600529047 /* Services.m */; };
 		97FB385E1144B2D000529047 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB385D1144B2D000529047 /* DataManager.m */; };
 		97FB38A01144C04500529047 /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97FB389F1144C04500529047 /* Menu.xib */; };
@@ -79,6 +105,47 @@
 		9749DC03114017630056B12B /* AddNewMateFormVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewMateFormVC.h; sourceTree = "<group>"; };
 		9749DC04114017630056B12B /* AddNewMateFormVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewMateFormVC.m; sourceTree = "<group>"; };
 		9749DC0E1140180A0056B12B /* AddNewMateForm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewMateForm.xib; sourceTree = "<group>"; };
+		97AAA6151185277C00FDEFB9 /* Sex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sex.h; sourceTree = "<group>"; };
+		97AAA6161185277C00FDEFB9 /* Sex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sex.m; sourceTree = "<group>"; };
+		97AAA62611852CFB00FDEFB9 /* SexList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SexList.h; sourceTree = "<group>"; };
+		97AAA62711852CFB00FDEFB9 /* SexList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SexList.m; sourceTree = "<group>"; };
+		97AAA62F11852E1B00FDEFB9 /* AddNewSexForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewSexForm.h; sourceTree = "<group>"; };
+		97AAA63011852E1B00FDEFB9 /* AddNewSexForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewSexForm.m; sourceTree = "<group>"; };
+		97AAA685118534B700FDEFB9 /* General.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = General.h; sourceTree = "<group>"; };
+		97AAA686118534B700FDEFB9 /* General.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = General.m; sourceTree = "<group>"; };
+		97AAA68A118536D300FDEFB9 /* GeneralList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralList.h; sourceTree = "<group>"; };
+		97AAA68B118536D300FDEFB9 /* GeneralList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralList.m; sourceTree = "<group>"; };
+		97AAA68D1185377D00FDEFB9 /* AddNewGeneralForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewGeneralForm.h; sourceTree = "<group>"; };
+		97AAA68E1185377D00FDEFB9 /* AddNewGeneralForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewGeneralForm.m; sourceTree = "<group>"; };
+		97AAAA42118CE21F00FDEFB9 /* AddProfileForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddProfileForm.h; sourceTree = "<group>"; };
+		97AAAA43118CE21F00FDEFB9 /* AddProfileForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddProfileForm.m; sourceTree = "<group>"; };
+		97AAAA4C118CE4ED00FDEFB9 /* AddProfileForm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProfileForm.xib; sourceTree = "<group>"; };
+		97AAAAAF118CEFAA00FDEFB9 /* ApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiManager.h; sourceTree = "<group>"; };
+		97AAAAB0118CEFAA00FDEFB9 /* ApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiManager.m; sourceTree = "<group>"; };
+		97AAAAB4118D12E900FDEFB9 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		97AAAAB5118D12E900FDEFB9 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		97AAAAB7118D12E900FDEFB9 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		97AAAAB8118D12E900FDEFB9 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		97AAAAB9118D12E900FDEFB9 /* NSCharacterSet_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCharacterSet_Extensions.h; sourceTree = "<group>"; };
+		97AAAABA118D12E900FDEFB9 /* NSCharacterSet_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCharacterSet_Extensions.m; sourceTree = "<group>"; };
+		97AAAABB118D12E900FDEFB9 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		97AAAABC118D12E900FDEFB9 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		97AAAABD118D12E900FDEFB9 /* NSScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSScanner_Extensions.h; sourceTree = "<group>"; };
+		97AAAABE118D12E900FDEFB9 /* NSScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSScanner_Extensions.m; sourceTree = "<group>"; };
+		97AAAAC0118D12E900FDEFB9 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		97AAAAC1118D12E900FDEFB9 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		97AAAAC2118D12E900FDEFB9 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		97AAAAC3118D12E900FDEFB9 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		97AAAAC4118D12E900FDEFB9 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		97AAAAC5118D12E900FDEFB9 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		97AAAACE118D132500FDEFB9 /* ServerAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerAdapter.h; sourceTree = "<group>"; };
+		97AAAACF118D132D00FDEFB9 /* ServerAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerAdapter.m; sourceTree = "<group>"; };
+		97AAAAE6118E0E8800FDEFB9 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		97AAAAEC118E0F7B00FDEFB9 /* Protocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protocols.h; sourceTree = "<group>"; };
+		97AAAB3E118E1DCA00FDEFB9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		97AAAB42118E1DE100FDEFB9 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		97AAAB43118E1DE100FDEFB9 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		97AAAC91118E8F3600FDEFB9 /* matemeter.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = matemeter.sql; sourceTree = "<group>"; };
 		97B71AAD1164EF2C003D2459 /* AddRating.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRating.xib; sourceTree = "<group>"; };
 		97B71AF21167052E003D2459 /* AddRatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRatingCell.h; sourceTree = "<group>"; };
 		97B71AF31167052E003D2459 /* AddRatingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRatingCell.m; sourceTree = "<group>"; };
@@ -88,7 +155,17 @@
 		97B71CEE11690BD2003D2459 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 		97B72139116C4753003D2459 /* doneup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doneup.png; sourceTree = "<group>"; };
 		97B7213B116C4757003D2459 /* donedown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donedown.png; sourceTree = "<group>"; };
-		97B72323116D21B6003D2459 /* matemeter.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = matemeter.sql; sourceTree = "<group>"; };
+		97C7CF7411815B90006D1F42 /* AddNewSocialForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewSocialForm.h; sourceTree = "<group>"; };
+		97C7CF7511815B90006D1F42 /* AddNewSocialForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewSocialForm.m; sourceTree = "<group>"; };
+		97C7CF7711815C42006D1F42 /* Social.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Social.h; sourceTree = "<group>"; };
+		97C7CF7811815C42006D1F42 /* Social.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Social.m; sourceTree = "<group>"; };
+		97C7CF9811815DCD006D1F42 /* SocialList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialList.h; sourceTree = "<group>"; };
+		97C7CF9911815DCD006D1F42 /* SocialList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialList.m; sourceTree = "<group>"; };
+		97C7D0571184C62A006D1F42 /* AddSegment.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSegment.xib; sourceTree = "<group>"; };
+		97C7D07A1184D29D006D1F42 /* AddSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSegment.h; sourceTree = "<group>"; };
+		97C7D07B1184D29D006D1F42 /* AddSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSegment.m; sourceTree = "<group>"; };
+		97C7D07D1184D351006D1F42 /* AddSegmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSegmentCell.h; sourceTree = "<group>"; };
+		97C7D07E1184D351006D1F42 /* AddSegmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSegmentCell.m; sourceTree = "<group>"; };
 		97FB38591144B17600529047 /* Services.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
 		97FB385A1144B17600529047 /* Services.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Services.m; sourceTree = "<group>"; };
 		97FB385C1144B2D000529047 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
@@ -139,6 +216,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				97FB41D11156BD2900529047 /* libsqlite3.0.dylib in Frameworks */,
+				97AAAB3F118E1DCA00FDEFB9 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +228,8 @@
 			children = (
 				1D3623240D0F684500981E51 /* matemeterAppDelegate.h */,
 				1D3623250D0F684500981E51 /* matemeterAppDelegate.m */,
+				97AAAAE6118E0E8800FDEFB9 /* Settings.h */,
+				97AAAAEC118E0F7B00FDEFB9 /* Protocols.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -165,17 +245,19 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				97AAAAB2118D12E900FDEFB9 /* Vendor */,
+				9749DAED113E351D0056B12B /* VCs */,
 				97FB38581144B13E00529047 /* Services */,
 				9749DBE81140144B0056B12B /* Table Forms */,
 				9749DBA3113F89370056B12B /* Support */,
 				9749DB8C113F83210056B12B /* Table Cells */,
 				9749DB39113E42DA0056B12B /* Models */,
-				9749DAED113E351D0056B12B /* VCs */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				97AAAA4C118CE4ED00FDEFB9 /* AddProfileForm.xib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -195,13 +277,14 @@
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				97FD0FF4115ED1980049392F /* AddNewRatingCell.xib */,
 				97FB389F1144C04500529047 /* Menu.xib */,
-				97B72323116D21B6003D2459 /* matemeter.sql */,
 				9749DC0E1140180A0056B12B /* AddNewMateForm.xib */,
 				97B72139116C4753003D2459 /* doneup.png */,
 				97B7213B116C4757003D2459 /* donedown.png */,
+				97AAAC91118E8F3600FDEFB9 /* matemeter.sql */,
 				97FD0FFC11604B4E0049392F /* KeyValCell.xib */,
 				97FB40771156627F00529047 /* MateCell.xib */,
 				97FD0F42115EC5E50049392F /* AddLargeText.xib */,
+				97C7D0571184C62A006D1F42 /* AddSegment.xib */,
 				9749DB96113F872F0056B12B /* AddNewMate.xib */,
 				8D1107310486CEB800E47090 /* matemeter-Info.plist */,
 				97FB393D114E00E900529047 /* MenuCell.xib */,
@@ -219,6 +302,7 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				97FB41D01156BD2900529047 /* libsqlite3.0.dylib */,
+				97AAAB3E118E1DCA00FDEFB9 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,16 +312,22 @@
 			children = (
 				97FB3944114E739F00529047 /* MenuList.h */,
 				97FB3945114E739F00529047 /* MenuList.m */,
+				97AAA68A118536D300FDEFB9 /* GeneralList.h */,
+				97AAA68B118536D300FDEFB9 /* GeneralList.m */,
+				97AAA62611852CFB00FDEFB9 /* SexList.h */,
+				97AAA62711852CFB00FDEFB9 /* SexList.m */,
+				97C7CF9811815DCD006D1F42 /* SocialList.h */,
+				97C7CF9911815DCD006D1F42 /* SocialList.m */,
 				97FB41E91156E6A500529047 /* ExpenseList.h */,
 				97FB41EA1156E6A500529047 /* ExpenseList.m */,
-				97FD1060116054AB0049392F /* AddDateVC.h */,
+				97C7D07A1184D29D006D1F42 /* AddSegment.h */,
+				97C7D07B1184D29D006D1F42 /* AddSegment.m */,
 				97B71B0A1167EB82003D2459 /* AddRatingVC.h */,
 				97B71B0B1167EB82003D2459 /* AddRatingVC.m */,
+				97FD1060116054AB0049392F /* AddDateVC.h */,
 				97FD1061116054AB0049392F /* AddDateVC.m */,
 				9749DAF0113E356A0056B12B /* MateListVC.h */,
 				9749DAF1113E356A0056B12B /* MateListVC.m */,
-				97FB425F1156F02800529047 /* AddNewExpenseForm.h */,
-				97FB42601156F02800529047 /* AddNewExpenseForm.m */,
 				9749DC03114017630056B12B /* AddNewMateFormVC.h */,
 				9749DC04114017630056B12B /* AddNewMateFormVC.m */,
 			);
@@ -247,6 +337,12 @@
 		9749DB39113E42DA0056B12B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				97AAA685118534B700FDEFB9 /* General.h */,
+				97AAA686118534B700FDEFB9 /* General.m */,
+				97AAA6151185277C00FDEFB9 /* Sex.h */,
+				97AAA6161185277C00FDEFB9 /* Sex.m */,
+				97C7CF7711815C42006D1F42 /* Social.h */,
+				97C7CF7811815C42006D1F42 /* Social.m */,
 				97FB42D51156FC4000529047 /* Expense.h */,
 				97FB42D61156FC4000529047 /* Expense.m */,
 				97B71CED11690BD2003D2459 /* Friend.h */,
@@ -269,6 +365,8 @@
 				97FD105A116051840049392F /* AddDateCell.h */,
 				97FD105B116051840049392F /* AddDateCell.m */,
 				97B71AF21167052E003D2459 /* AddRatingCell.h */,
+				97C7D07D1184D351006D1F42 /* AddSegmentCell.h */,
+				97C7D07E1184D351006D1F42 /* AddSegmentCell.m */,
 				97B71AF31167052E003D2459 /* AddRatingCell.m */,
 				97FD0F48115EC6B50049392F /* AddLargeTextCell.h */,
 				97FD0F49115EC6B50049392F /* AddLargeTextCell.m */,
@@ -285,8 +383,12 @@
 		9749DBA3113F89370056B12B /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				97AAAB42118E1DE100FDEFB9 /* LoadingView.m */,
+				97AAAB43118E1DE100FDEFB9 /* LoadingView.h */,
 				9749DBA4113F89510056B12B /* IBTableViewCell.h */,
 				9749DBA5113F89510056B12B /* IBTableViewCell.m */,
+				97AAAACF118D132D00FDEFB9 /* ServerAdapter.m */,
+				97AAAACE118D132500FDEFB9 /* ServerAdapter.h */,
 				97FB3D171150A8FF00529047 /* BucketedHash.h */,
 				97FB3D181150A8FF00529047 /* BucketedHash.m */,
 			);
@@ -296,10 +398,67 @@
 		9749DBE81140144B0056B12B /* Table Forms */ = {
 			isa = PBXGroup;
 			children = (
+				97AAA68D1185377D00FDEFB9 /* AddNewGeneralForm.h */,
+				97AAA68E1185377D00FDEFB9 /* AddNewGeneralForm.m */,
+				97AAA62F11852E1B00FDEFB9 /* AddNewSexForm.h */,
+				97AAA63011852E1B00FDEFB9 /* AddNewSexForm.m */,
+				97C7CF7411815B90006D1F42 /* AddNewSocialForm.h */,
+				97C7CF7511815B90006D1F42 /* AddNewSocialForm.m */,
+				97FB425F1156F02800529047 /* AddNewExpenseForm.h */,
+				97FB42601156F02800529047 /* AddNewExpenseForm.m */,
 				9749DBE9114014600056B12B /* AddNewMateForm.h */,
+				97AAAA42118CE21F00FDEFB9 /* AddProfileForm.h */,
+				97AAAA43118CE21F00FDEFB9 /* AddProfileForm.m */,
 				9749DBEA114014600056B12B /* AddNewMateForm.m */,
 			);
 			name = "Table Forms";
+			sourceTree = "<group>";
+		};
+		97AAAAB2118D12E900FDEFB9 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				97AAAAB3118D12E900FDEFB9 /* TouchJSON1.0.6 */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		97AAAAB3118D12E900FDEFB9 /* TouchJSON1.0.6 */ = {
+			isa = PBXGroup;
+			children = (
+				97AAAAB4118D12E900FDEFB9 /* CDataScanner.h */,
+				97AAAAB5118D12E900FDEFB9 /* CDataScanner.m */,
+				97AAAAB6118D12E900FDEFB9 /* Extensions */,
+				97AAAABF118D12E900FDEFB9 /* JSON */,
+			);
+			path = TouchJSON1.0.6;
+			sourceTree = "<group>";
+		};
+		97AAAAB6118D12E900FDEFB9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				97AAAAB7118D12E900FDEFB9 /* CDataScanner_Extensions.h */,
+				97AAAAB8118D12E900FDEFB9 /* CDataScanner_Extensions.m */,
+				97AAAAB9118D12E900FDEFB9 /* NSCharacterSet_Extensions.h */,
+				97AAAABA118D12E900FDEFB9 /* NSCharacterSet_Extensions.m */,
+				97AAAABB118D12E900FDEFB9 /* NSDictionary_JSONExtensions.h */,
+				97AAAABC118D12E900FDEFB9 /* NSDictionary_JSONExtensions.m */,
+				97AAAABD118D12E900FDEFB9 /* NSScanner_Extensions.h */,
+				97AAAABE118D12E900FDEFB9 /* NSScanner_Extensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		97AAAABF118D12E900FDEFB9 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				97AAAAC0118D12E900FDEFB9 /* CJSONDeserializer.h */,
+				97AAAAC1118D12E900FDEFB9 /* CJSONDeserializer.m */,
+				97AAAAC2118D12E900FDEFB9 /* CJSONScanner.h */,
+				97AAAAC3118D12E900FDEFB9 /* CJSONScanner.m */,
+				97AAAAC4118D12E900FDEFB9 /* CJSONSerializer.h */,
+				97AAAAC5118D12E900FDEFB9 /* CJSONSerializer.m */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		97FB38581144B13E00529047 /* Services */ = {
@@ -307,6 +466,8 @@
 			children = (
 				97FB38591144B17600529047 /* Services.h */,
 				97FB385A1144B17600529047 /* Services.m */,
+				97AAAAAF118CEFAA00FDEFB9 /* ApiManager.h */,
+				97AAAAB0118CEFAA00FDEFB9 /* ApiManager.m */,
 				97FB385C1144B2D000529047 /* DataManager.h */,
 				97FB385D1144B2D000529047 /* DataManager.m */,
 			);
@@ -369,7 +530,9 @@
 				97B71AAE1164EF2C003D2459 /* AddRating.xib in Resources */,
 				97B7213A116C4753003D2459 /* doneup.png in Resources */,
 				97B7213C116C4757003D2459 /* donedown.png in Resources */,
-				97B72324116D21B6003D2459 /* matemeter.sql in Resources */,
+				97C7D0581184C62A006D1F42 /* AddSegment.xib in Resources */,
+				97AAAA4D118CE4ED00FDEFB9 /* AddProfileForm.xib in Resources */,
+				97AAAC92118E8F3600FDEFB9 /* matemeter.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +569,29 @@
 				97B71AF41167052E003D2459 /* AddRatingCell.m in Sources */,
 				97B71B0C1167EB82003D2459 /* AddRatingVC.m in Sources */,
 				97B71CEF11690BD2003D2459 /* Friend.m in Sources */,
+				97C7CF7611815B90006D1F42 /* AddNewSocialForm.m in Sources */,
+				97C7CF7911815C42006D1F42 /* Social.m in Sources */,
+				97C7CF9A11815DCD006D1F42 /* SocialList.m in Sources */,
+				97C7D07C1184D29D006D1F42 /* AddSegment.m in Sources */,
+				97C7D07F1184D351006D1F42 /* AddSegmentCell.m in Sources */,
+				97AAA6171185277C00FDEFB9 /* Sex.m in Sources */,
+				97AAA62811852CFB00FDEFB9 /* SexList.m in Sources */,
+				97AAA63111852E1B00FDEFB9 /* AddNewSexForm.m in Sources */,
+				97AAA687118534B700FDEFB9 /* General.m in Sources */,
+				97AAA68C118536D300FDEFB9 /* GeneralList.m in Sources */,
+				97AAA68F1185377D00FDEFB9 /* AddNewGeneralForm.m in Sources */,
+				97AAAA44118CE21F00FDEFB9 /* AddProfileForm.m in Sources */,
+				97AAAAB1118CEFAA00FDEFB9 /* ApiManager.m in Sources */,
+				97AAAAC6118D12E900FDEFB9 /* CDataScanner.m in Sources */,
+				97AAAAC7118D12E900FDEFB9 /* CDataScanner_Extensions.m in Sources */,
+				97AAAAC8118D12E900FDEFB9 /* NSCharacterSet_Extensions.m in Sources */,
+				97AAAAC9118D12E900FDEFB9 /* NSDictionary_JSONExtensions.m in Sources */,
+				97AAAACA118D12E900FDEFB9 /* NSScanner_Extensions.m in Sources */,
+				97AAAACB118D12E900FDEFB9 /* CJSONDeserializer.m in Sources */,
+				97AAAACC118D12E900FDEFB9 /* CJSONScanner.m in Sources */,
+				97AAAACD118D12E900FDEFB9 /* CJSONSerializer.m in Sources */,
+				97AAAAD0118D132D00FDEFB9 /* ServerAdapter.m in Sources */,
+				97AAAB44118E1DE100FDEFB9 /* LoadingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import "Services.h"
 #import "matemeterAppDelegate.h"
 #import "DataManager.h"
+#import "ApiManager.h"
 
 
 @implementation Services
@@ -16,12 +17,14 @@
 -(id) init {
 		if (self = [super init]) {
 			dm = [[DataManager alloc] init];
+			am = [[ApiManager alloc] init];
 		}
 	return self;
 }
 
 -(void) dealloc {
 	[dm release];
+	[am release];
 	[super dealloc];
 }
 
@@ -31,6 +34,10 @@
 
 -(DataManager*) dm {
 	return dm;
+}
+
+-(ApiManager*) am {
+	return am;
 }
 
 @end

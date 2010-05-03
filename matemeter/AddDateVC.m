@@ -8,6 +8,9 @@
 
 #import "AddDateVC.h"
 #import "Expense.h"
+#import "Social.h"
+#import "Sex.h"
+#import "General.h"
 #import "AddDateCell.h"
 #import "AddNewExpenseForm.h"
 
@@ -15,9 +18,8 @@
 
 @implementation AddDateVC
 
--(id) initWithExpense:(Expense *)e {
+-(id) init {
 	if (self = [super init]) {
-		expense = [e retain];
 		self.title = @"Add Date";
 		UIBarButtonItem* backBtn = [[[UIBarButtonItem alloc] init] autorelease];
 		backBtn.title = @"Cancel";
@@ -30,8 +32,40 @@
 		self.navigationItem.rightBarButtonItem = saveBtn;
 	}
 	return self;
-	
 }
+
+-(id) initWithExpense:(Expense *)e {
+	if (self = [super init]) {
+		expense = [e retain];
+		self = [self init];
+	}
+	return self;
+}
+
+-(id) initWithSocial:(Social *)s {
+	if (self = [super init]) {
+		social = [s retain];
+		self = [self init];
+	}
+	return self;
+}
+
+-(id) initWithSex:(Sex *)s {
+	if (self = [super init]) {
+		sex = [s retain];
+		self = [self init];
+	}
+	return self;
+}
+
+-(id) initWithGeneral:(General *)g {
+	if (self = [super init]) {
+		general = [g retain];
+		self = [self init];
+	}
+	return self;
+}
+
 
 -(void) dealloc {
 	[super dealloc];
@@ -47,6 +81,16 @@
 	if (expense) {
 		expense.date = [[cell datepicker] date];
 	}
+	if(social) {
+		social.date = [[cell datepicker] date];
+	}
+	if(sex) {
+		sex.date = [[cell datepicker] date];
+	}
+	if(general) {
+		general.date = [[cell datepicker] date];
+	}
+	
 	[self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -84,6 +128,38 @@
 		[cell setup:strExpenseDate date:expense.date];
 		[formatter release];
 	}
+	if (social) {
+		NSDate *dDate = social.date;
+		NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+		[formatter setDateStyle:NSDateFormatterLongStyle];
+		[formatter setTimeStyle:NSDateFormatterNoStyle];
+		NSString *strDate = [formatter stringFromDate:dDate];
+		
+		[cell setup:strDate date:social.date];
+		[formatter release];
+	}
+	if (sex) {
+		NSDate *dDate = sex.date;
+		NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+		[formatter setDateStyle:NSDateFormatterLongStyle];
+		[formatter setTimeStyle:NSDateFormatterNoStyle];
+		NSString *strDate = [formatter stringFromDate:dDate];
+		
+		[cell setup:strDate date:sex.date];
+		[formatter release];
+	}
+	
+	if (general) {
+		NSDate *dDate = sex.date;
+		NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+		[formatter setDateStyle:NSDateFormatterLongStyle];
+		[formatter setTimeStyle:NSDateFormatterNoStyle];
+		NSString *strDate = [formatter stringFromDate:dDate];
+		
+		[cell setup:strDate date:general.date];
+		[formatter release];
+	}
+	
 	
 	//[cell changeTextTo:[NSString stringWithFormat:@"Add Expense"]];
 	return cell;

@@ -32,8 +32,9 @@
 }
 
 -(NSString*) datestr {
+	NSLog(@"%@", self.date);
 	NSDateFormatter* dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
-	[dateFormatter setDateFormat:@"yyyy-mm-dd hh:mm:ss"];
+	[dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
 	NSString* strdate = [dateFormatter stringFromDate:self.date];
 	return strdate;
 }

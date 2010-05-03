@@ -55,7 +55,7 @@
 }
 
 -(void) showSaveButton {
-	if ((expense.cost >= 0) && ([[expense.description stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] > 0)) {
+	if ((expense.rating < 11) && (expense.cost >= 0) && ([[expense.description stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] > 0)) {
 		self.navigationItem.rightBarButtonItem = saveBtn;
 	}	
 }
@@ -64,8 +64,7 @@
 
 -(id) initWithExpense:(Expense*) ex {
 	if(self = [self init]){
-		[ex retain];
-		expense = ex;
+		expense = [[Services services] dm].currentExpense;
 		updateExpense = YES;
 	}
 	return self;
@@ -85,9 +84,12 @@
 
 -(void) tapSave {
 	[self saveInfo];
-	//[[[Services services] dm].currentMate.expenses addObject:expense];
-	//NSLog(@"EXPENSE mate_id: %d, description: %@, cost: %d, date %@, rating: %d", mate.ID, expense.description, expense.cost, [expense date], expense.rating);
-	NSLog(@"Form expense count %d", [[[Services services] dm].currentMate.expenses count]);
+	NSLog(@"Expense id is %d", expense.ID);
+	if (updateExpense) {
+		[[[Services services] dm] updateExpense:expense.ID description:expense.description start_date:[expense datestr] cost:expense.cost rating:expense.rating latest:0];
+	} else {
+		[[[Services services] dm] insertExpense:mate.ID description:expense.description start_date:[expense datestr] cost:expense.cost rating:expense.rating];
+	}
 	[self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -101,9 +103,6 @@
 	[self showSaveButton];
 	
 	NSLog(@"cost is %d", expense.cost);
-//	if(name && age && ([[name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] > 0)  && ([[age stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] > 0)){
-//		self.navigationItem.rightBarButtonItem = saveBtn;
-//	}
 }
 
 
@@ -120,8 +119,6 @@
 		expense.cost = [[costTextCell txtBox].text intValue];
 	}
 	expense.description = [descriptionTextCell txtBox].text;
-	NSLog(@"EXPENSE description: %@, cost: %d,  rating: %d", expense.description, expense.cost, expense.rating);
-	
 }
 
 
@@ -172,7 +169,6 @@
 		static NSString* AddTextCellIden = @"AddTextCell";
 		costTextCell = (AddTextCell*)[tableView dequeueReusableCellWithIdentifier:AddTextCellIden];
 		if (!costTextCell) {
-			NSLog(@"costTextCell is being created");
 			costTextCell = [[AddTextCell alloc] initWithReuseIdentifier:AddTextCellIden];
 			[costTextCell setTheValues:@"How much did it cost?" txtStart:@"0.00"];
 			[costTextCell txtBox].delegate = self;
@@ -221,6 +217,13 @@
 		}
 		return ratingCell;
 	}
+	
+	static NSString* DefaultCellIden = @"DefaultCellIden";
+	UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:DefaultCellIden];
+	if (!cell) {
+		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:DefaultCellIden] autorelease];
+	}
+	return cell;
 	NSLog(@"WE SHOULD NEVER REACH HERE");
 }
 
